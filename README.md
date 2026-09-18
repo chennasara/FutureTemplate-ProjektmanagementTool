@@ -28,7 +28,7 @@ Das System soll für unterschiedliche Projektarten eingesetzt werden können, be
 - Business-Ideen
 - persönliche Projekte
 
-Ein weiteres Ziel besteht darin, die eigene Arbeitsweise nachvollziehbar zu dokumentieren. Dadurch kann das System später als Nachweis bei Bewerbungen oder für ein persönliches Portfolio verwendet werden.
+Ein weiteres Ziel besteht darin, die eigene Arbeitsweise nachvollziehbar zu dokumentieren.
 
 ---
 
