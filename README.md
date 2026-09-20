@@ -5,7 +5,8 @@ This repository documents the development of a structured project management sys
 
 ## 1. Projektbeschreibung
 
-Ziel dieses Projekts ist die Entwicklung eines professionellen Projektmanagement-Tools in Notion. Das System soll nicht nur Aufgaben verwalten, sondern den vollständigen Ablauf eines Projekts strukturiert und nachvollziehbar abbilden.
+Das Projektmanagement-Tool orientiert sich hauptsächlich am IPERKA-Modell. Die sechs Phasen Informieren, Planen, Entscheiden, Realisieren, Kontrollieren und Auswerten werden durch miteinander verbundene Notion-Datenbanken abgebildet. Ergänzend werden agile Elemente wie Kanban-Boards, laufende Priorisierung, 
+Feedback und Retrospektiven verwendet. Dadurch entsteht ein hybrider Ansatz, der eine struckturierte Projektdurchführung ermöglicht und gleichzeitig flexibel an unterschiedliche Projektarten angepasst werden kann.
 
 Dazu gehören:
 
@@ -20,15 +21,16 @@ Dazu gehören:
 - Learnings und Retrospektiven
 - Screenshots, Dateien und weitere Nachweise
 
-Das System soll für unterschiedliche Projektarten eingesetzt werden können, beispielsweise:
+Das System soll für unterschiedliche Projektarten, im kleineren Umfang, eingesetzt werden können, beispielsweise:
 
 - Informatikprojekte
 - Schulprojekte
 - Notion-Produkte
-- Business-Ideen
+- Business-Ideen / Startup Ideen
 - persönliche Projekte
 
 Ein weiteres Ziel besteht darin, die eigene Arbeitsweise nachvollziehbar zu dokumentieren.
+Die Oberfläche soll Benutzerfreundlich sein und die Bearbeitung und Dokumetierung eines Projekts erleichtern.
 
 ---
 
