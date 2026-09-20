@@ -5,13 +5,15 @@ The important changes of the project are held in this Document.
 
 
 ## 20.09.2026
-## Added 
+### Added 
+- Änderungen in folgenden Dateien: 01_project_overview.md; 03_methodology.md
 - Filled in Information about my workethic imto 03_methodology
-- Ended Planning Phase that has been going on since 18.09.2026
+- Ended Planning Phase that has been going on since 18.09.2026- Offizielle Information dokumentation gezielter bearbeitet 
+- Idealer Kunde wurde zusammengefasst 
 
-## Changed
+### Changed
 - README File has been updated
-- 
+
 
 
 
