@@ -193,40 +193,37 @@ Diese Annahmen werden im weiteren Projektverlauf überprüft und bei Bedarf ange
 |  |  |  |
 >Namen von Testpersonen werden im öffentlichen Repository nur mit ausdrücklicher Zustimmung veröffentlicht. Andernfalls werden anonymisierte Testpersonen-IDs verwendet.
 ---
+
 ## 12. Informationsbeschaffung
+
 Die Bedürfnisse und Anforderungen sollen nicht ausschliesslich aus eigenen Annahmen abgeleitet werden. Für die Informationsphase sind folgende Methoden vorgesehen:
+
 | Methode | Zweck | Status |
 |---|---|---|
-| Analyse bestehender Lösungen | Vergleich vorhandener Projektmanagement-Systeme | Planned |
-| Befragung potenzieller Nutzender | Ermittlung gewünschter Funktionen und bestehender Probleme | Planned |
-| Interviews | Vertiefung einzelner Bedürfnisse und Erfahrungen |  |
-| Analyse schulischer Projektvorgaben | Ermittlung wiederkehrender Bestandteile und Abgaben |  |
-| technische Machbarkeitsprüfung | Überprüfung der Funktionen innerhalb von Notion | Planned |
-| Analyse der Notion-Tarife | Prüfung der kostenlosen und kostenpflichtigen Funktionen | Planned |
-| Auswertung eigener Projekterfahrungen | Erfassung typischer Probleme aus bisherigen Projekten | In Progress |
-|  |  |  |
-### 12.1 Geplante Vergleichskriterien
-Bestehende Lösungen sollen unter anderem anhand folgender Kriterien verglichen werden:
-- Funktionsumfang
-- Übersichtlichkeit
-- Einarbeitungszeit
-- mobile Nutzbarkeit
-- Zusammenarbeit
-- Aufgabenverwaltung
-- Terminverwaltung
-- Anpassbarkeit
-- Kosten
-- Datenschutz
-- Eignung für schulische Projekte
-### 12.2 Untersuchte Lösungen
-| Lösung | Status der Analyse | Dokumentation |
-|---|---|---|
-| Notion | In Progress |  |
-| Trello |  |  |
-| Microsoft Planner |  |  |
-| Asana |  |  |
-| ClickUp |  |  |
-|  |  |  |
+| Plattform-Evaluation | Vergleich geeigneter Plattformen für den ersten Prototyp | Completed |
+| Befragung potenzieller Nutzender | Ermittlung gewünschter Funktionen und bestehender Probleme | In Progress |
+| Interviews | Vertiefung einzelner Bedürfnisse und Erfahrungen | In Progress |
+| [Analyse schulischer Projektvorgaben](../research/05_school_requirements_analysis.md) | Ermittlung wiederkehrender Bestandteile und Abgaben | In Progress |
+| Technische Machbarkeitsprüfung | Überprüfung der Funktionen innerhalb von Notion | Planned |
+| Analyse der Notion-Tarife | Prüfung kostenloser und kostenpflichtiger Funktionen | Completed |
+| [Auswertung eigener Projekterfahrungen](../research/02_project_experience_analysis.md) |Die eigenen Projekterfahrungen werden separat in 02_project_experience_analysis ausgewertet.| In Progress |
+
+### 12.1 Ergebnis der Plattform-Evaluation
+
+Die Plattformen wurden anhand von elf gewichteten Kriterien mit insgesamt 100 möglichen Punkten bewertet.
+
+| Rang | Plattform | Punktzahl | Kurzbewertung |
+|---:|---|---:|---|
+| 1 | Notion | **87/100** | Für den ersten Prototyp ausgewählt |
+| 2 | Coda | **82/100** | Starke Alternative, jedoch weniger geeignet für die Zielgruppe und Verteilung |
+| 3 | Eigene Webanwendung | **77/100** | Langfristig interessant, für den aktuellen Projektumfang jedoch zu aufwendig |
+| 4 | Airtable | **71/100** | Technisch geeignet, aber weniger dokumentenorientiert |
+| 5 | Microsoft Power Apps | **64/100** | Vor allem für institutionelle Microsoft-Umgebungen geeignet |
+
+**Entscheidung:** Der erste funktionsfähige Prototyp wird in Notion entwickelt. Eine eigenständige Anwendung wird erst als separates Folgeprojekt geprüft, wenn die Nachfrage und die Grenzen des Notion-Prototyps belegt sind.
+
+Die vollständige Nutzwertanalyse, die Einzelbewertungen, die Risiken und die verwendeten Quellen sind in [`01_platform_evaluation.md`](01_platform_evaluation.md) dokumentiert.
+
 ---
 ## 13. Vorläufige Erfolgskriterien
 Die folgenden Erfolgskriterien sind vorläufig. Sie werden nach Abschluss der Anforderungsanalyse präzisiert und mit konkreten Testfällen verknüpft.
@@ -243,8 +240,9 @@ Die folgenden Erfolgskriterien sind vorläufig. Sie werden nach Abschluss der An
 | `SC-009` | Alle Must-have-Anforderungen bestehen die zugeordneten Testfälle. | Testprotokoll |  | Proposed |
 | `SC-010` | Öffentliche Nachweise enthalten keine vertraulichen oder unnötigen personenbezogenen Daten. | Datenschutzkontrolle |  | Proposed |
 | `SC-011` |  |  |  | Proposed |
+
 Die detaillierten Testfälle und Testergebnisse werden später in [`06_testing.md`](06_testing.md) dokumentiert.
----
+
 ## 14. Testpersonen
 Die Tests sollen mit freiwilligen Personen aus unterschiedlichen Bildungsstufen durchgeführt werden.
 | Testpersonen-ID | Bildungsbereich | Technische Vorkenntnisse | Testschwerpunkt | Status |
@@ -263,42 +261,32 @@ Für die Tests werden zusätzlich folgende Angaben dokumentiert:
 - Verbesserungsvorschläge
 - Einwilligung zur Datenerhebung
 Personenbezogene Angaben werden getrennt von der öffentlichen Projektdokumentation gespeichert.
----
+
 ## 15. Datenschutz
-Das Template wird innerhalb des Notion-Workspace der jeweiligen Nutzerinnen und Nutzer eingesetzt. Die technische Speicherung und Verarbeitung der dort eingegebenen Daten richten sich nach den jeweils geltenden Bedingungen und Datenschutzbestimmungen von Notion.
-Nutzerinnen und Nutzer entscheiden selbst, welche Inhalte sie in ihrem Workspace erfassen und mit welchen Personen sie diese teilen. Das Template soll keine unnötigen personenbezogenen oder besonders schützenswerten Daten voraussetzen.
-Für die Entwicklung und die Tests gelten folgende Grundsätze:
-- Es werden nur Daten erhoben, die für die Anforderungsanalyse oder den Test notwendig sind.
-- Der Zweck der Datenerhebung wird den Teilnehmenden vorab mitgeteilt.
-- Die Teilnahme an Befragungen und Tests ist freiwillig.
-- Ergebnisse werden im öffentlichen Repository anonymisiert oder zusammengefasst dargestellt.
-- Namen, private E-Mail-Adressen, Telefonnummern und Schulunterlagen werden nicht öffentlich veröffentlicht.
-- Testpersonen können die Löschung ihrer personenbezogenen Angaben verlangen.
-- Der Zugriff auf nicht anonymisierte Testdaten wird auf die Projektverantwortliche beschränkt.
-- Testdaten werden nach Abschluss der Auswertung gelöscht oder anonymisiert.
-- Für minderjährige Testpersonen werden schulische Vorgaben und notwendige Zustimmungen vor der Erhebung geprüft.
-- Screenshots verwenden ausschliesslich anonymisierte oder frei erfundene Beispieldaten.
-### 15.1 Geplante Datenerhebung
-| Datentyp | Zweck | Erforderlich | Speicherdauer |
-|---|---|---|---|
-| Bildungsstufe | Einordnung der Zielgruppe |  |  |
-| Erfahrung mit Notion | Beurteilung der Einarbeitung |  |  |
-| verwendetes Gerät | Prüfung der mobilen und stationären Nutzung |  |  |
-| Testergebnisse | Prüfung der Anforderungen |  |  |
-| Bewertung der Bedienbarkeit | Verbesserung der Benutzeroberfläche |  |  |
-| Verbesserungsvorschläge | Weiterentwicklung des Systems |  |  |
-|  |  |  |  |
-### 15.2 Verwendetes Erhebungswerkzeug
+## 15. Datenschutz und Datenerhebung
+
+Für die Zielgruppenbefragung und die späteren Produkttests werden nur Daten erhoben, die für die Anforderungsanalyse und die Überprüfung des Prototyps erforderlich sind.
+
+Die Teilnahme ist freiwillig. E-Mail-Adressen können optional für die Kontaktaufnahme zu späteren Produkttests angegeben werden. Personenbezogene Kontaktdaten werden nicht im öffentlichen Repository veröffentlicht.
+
+Die vollständige Beschreibung der Datenerhebung, Speicherung und Löschung befindet sich in [`03_data_collection_and_privacy.md`](../research/03_data_collection_and_privacy.md).
+
+### 15.1 Verwendetes Erhebungswerkzeug
+
 | Angabe | Wert |
 |---|---|
-| Werkzeug |  |
-| verantwortliche Person | Sara Chenna |
-| Speicherort der Rohdaten |  |
-| zugriffsberechtigte Personen |  |
-| geplantes Löschdatum |  |
-| Einwilligungsinformation vorhanden |  |
-Vor Beginn der Erhebung wird eine separate Datenschutz- und Teilnahmeinformation erstellt.
----
+| Werkzeug | Microsoft Forms |
+| Verantwortliche Person | Sara Chenna |
+| Speicherort der Rohdaten | Microsoft Forms beziehungsweise das zugehörige Microsoft-365-Konto; exportierte Dateien werden in einem geschützten OneDrive-Ordner gespeichert |
+| Zugriffsberechtigte Personen | Sara Chenna |
+| Geplante Löschung | Spätestens zwölf Monate nach Abschluss der Auswertung; freiwillig angegebene E-Mail-Adressen nach Abschluss der Testphase oder bei Widerruf |
+| Einwilligungsinformation vorhanden | Ja, Teilnahme- und Datenschutzhinweise befinden sich am Anfang der Umfrage; für die freiwillige Angabe der E-Mail-Adresse wird zusätzlich über deren Zweck informiert |
+| Veröffentlichung der Daten | Nur anonymisierte und zusammengefasste Ergebnisse; keine Rohdaten oder E-Mail-Adressen |
+| Erhebung von E-Mail-Adressen | Freiwillig und ausschliesslich zur Kontaktaufnahme für einen späteren Produkttest |
+
+Vor Beginn der Erhebung werden die Teilnahme- und Datenschutzinformationen geprüft. Die Teilnahme ist freiwillig. Die erhobenen Angaben werden ausschliesslich zur Anforderungsanalyse und Weiterentwicklung des Projektmanagement-Templates verwendet. Rohdaten und personenbezogene Angaben werden nicht im öffentlichen GitHub-Repository veröffentlicht.
+
+
 ## 16. Einschränkungen
 - Das System ist vom Funktionsumfang und den technischen Änderungen von Notion abhängig.
 - Nicht jede gewünschte Funktion kann innerhalb eines Notion-Templates umgesetzt werden.

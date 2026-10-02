@@ -12,31 +12,13 @@
 | Ausgewählte Plattform | Notion |
 
 > Diese Evaluation untersucht, auf welcher Plattform das geplante
-> Projektmanagement-System entwickelt werden soll. Sie ist von der
-> Konkurrenzanalyse zu unterscheiden, welche bereits bestehende
-> Projektmanagement-Produkte betrachtet.
+> Projektmanagement-System entwickelt werden soll.
 
-## 1. Ausgangslage
+## 1. Entscheidungsbedarf
 
-Geplant ist ein übersichtliches Projektmanagement-System für Schülerinnen,
-Schüler, Lernende und Studierende. Das Produkt soll insbesondere kleinere
-Projektarbeiten, Gruppenarbeiten und Abschlussarbeiten unterstützen.
+Die Ausgangslage, Zielgruppen, Anforderungen und der vorgesehene Funktionsumfang sind in [`01_project_overview.md`](01_project_overview.md) dokumentiert.
 
-Für die erste Version werden unter anderem folgende Funktionsbereiche geprüft:
-
-- zentrale Projektübersicht
-- Aufgabenverwaltung und Kanban-Board
-- Verantwortlichkeiten innerhalb einer Projektgruppe
-- Kalender, Fristen und Meilensteine
-- Checklisten und Vorlagen
-- Projektfortschritt und Taskpoints
-- Projektdokumentation
-- Projektabschluss und Learnings
-- Nutzung auf Desktop und Smartphone
-- grundlegende Zusammenarbeit ohne kostenpflichtiges Pflichtabonnement
-
-Vor Beginn der Planungsphase muss entschieden werden, auf welcher technischen
-Grundlage der erste Prototyp erstellt wird.
+Für den Übergang von der Informations- in die Planungsphase muss festgelegt werden, auf welcher technischen Grundlage der erste funktionsfähige Prototyp umgesetzt wird. Diese Evaluation dokumentiert ausschliesslich diese Plattformentscheidung.
 
 ## 2. Ziel der Evaluation
 
@@ -47,6 +29,7 @@ Die Evaluation soll folgende Frage beantworten:
 > schulische und studentische Projekte zu entwickeln und zu testen?
 
 Die Entscheidung bezieht sich auf den ersten funktionsfähigen Prototyp und
+
 nicht zwingend auf die langfristige technische Endlösung.
 
 ## 3. Untersuchte Optionen
@@ -61,14 +44,7 @@ nicht zwingend auf die langfristige technische Endlösung.
 
 ## 4. Ausschluss anderer Projektmanagement-Produkte
 
-Trello, Asana, Microsoft Planner und ClickUp werden in dieser Evaluation nicht
-als primäre Entwicklungsplattformen bewertet. Es handelt sich hauptsächlich um
-fertige Projektmanagement-Produkte. Sie sind für die Konkurrenzanalyse
-relevant, bieten aber weniger Möglichkeiten, ein eigenständiges und frei
-gestaltetes Produkt als eigene Vorlage oder Anwendung zu entwickeln.
-
-Die Konkurrenzanalyse wird separat unter
-[`01_competitor_analysis.md`](01_competitor_analysis.md) dokumentiert.
+Trello, Asana, Microsoft Planner und ClickUp sind fertige Projektmanagement-Produkte und werden in der separaten [`01_competitor_analysis.md`](01_competitor_analysis.md) betrachtet.
 
 ## 5. Bewertungssystem
 
@@ -85,7 +61,9 @@ Jede Plattform wird anhand einer Skala von 1 bis 5 bewertet.
 Die gewichtete Punktzahl wird wie folgt berechnet:
 
 ```text
+
 Gewichtete Punktzahl = Bewertung / 5 × Gewichtung
+
 ```
 
 Die maximal erreichbare Gesamtpunktzahl beträgt 100 Punkte.
@@ -105,7 +83,7 @@ Die maximal erreichbare Gesamtpunktzahl beträgt 100 Punkte.
 | `PLAT-009` | mobile Nutzbarkeit | 5 % | Wichtige Informationen sollen über ein Smartphone erreichbar sein. |
 | `PLAT-010` | Entwicklungs- und Wartungsaufwand | 15 % | Die erste Version wird von einer Person entwickelt und gepflegt. |
 | `PLAT-011` | Betriebs- und Rechtsaufwand | 5 % | Hosting, Konten, Sicherheit und Datenverarbeitung sollen beherrschbar bleiben. |
-|  | **Gesamt** | **100 %** |  |
+|  | **Gesamt** | **100 %** |  |
 
 ## 7. Nutzwertanalyse
 
@@ -136,6 +114,7 @@ Die maximal erreichbare Gesamtpunktzahl beträgt 100 Punkte.
 | 5 | Microsoft Power Apps | **64/100** | für institutionelle Microsoft-Umgebungen geeignet |
 
 Die Bewertungen stellen eine begründete Projekteinschätzung dar. Sie müssen
+
 durch einen kleinen praktischen Test der wichtigsten Annahmen ergänzt werden.
 
 ## 8. Einzelbewertung
@@ -166,8 +145,11 @@ durch einen kleinen praktischen Test der wichtigsten Annahmen ergänzt werden.
 #### Bewertung
 
 Notion eignet sich besonders gut für den ersten Prototyp, weil das Produkt aus
+
 Projektmanagement, Vorlagen und Dokumentation besteht. Ein grosser Teil der
+
 gewünschten Funktionen kann ohne klassische Softwareentwicklung umgesetzt und
+
 mit Testpersonen früh überprüft werden.
 
 ### 8.2 Coda
@@ -192,9 +174,13 @@ mit Testpersonen früh überprüft werden.
 #### Bewertung
 
 Coda ist technisch eine starke Alternative und übertrifft Notion bei einigen
+
 Automatisierungs- und Formelfunktionen. Die Grenzen geteilter kostenloser
+
 Dokumente sind für ein wachsendes Projektmanagement-System jedoch relevant.
+
 Die geringere Bekanntheit bei der Zielgruppe erhöht ausserdem den
+
 Erklärungsaufwand.
 
 ### 8.3 Airtable
@@ -219,8 +205,11 @@ Erklärungsaufwand.
 #### Bewertung
 
 Airtable eignet sich gut für das Datenmodell und strukturierte Auswertungen.
+
 Für ein Produkt, das zusätzlich Vorlagen, Anleitungen, Projektdokumentation und
+
 Learnings enthalten soll, ist Notion jedoch besser auf den geplanten
+
 Gesamtzweck abgestimmt.
 
 ### 8.4 Microsoft Power Apps
@@ -245,8 +234,11 @@ Gesamtzweck abgestimmt.
 #### Bewertung
 
 Power Apps ist interessant, wenn später eine konkrete Schule eine interne
+
 Anwendung innerhalb ihrer Microsoft-Umgebung benötigt. Für ein allgemein
+
 verkaufbares Produkt an einzelne Schülerinnen, Schüler und Studierende ist die
+
 Lizenz- und Administrationsabhängigkeit aktuell zu gross.
 
 ### 8.5 Eigene Webanwendung
@@ -275,8 +267,11 @@ Lizenz- und Administrationsabhängigkeit aktuell zu gross.
 #### Bewertung
 
 Eine eigene Webanwendung ist langfristig die flexibelste Option. Für die
+
 aktuelle Projektphase wäre sie jedoch unverhältnismässig aufwendig. Zuerst
+
 soll mit einem Notion-Prototyp geprüft werden, ob die Zielgruppe das Produkt
+
 tatsächlich benötigt und welche Funktionen im Alltag verwendet werden.
 
 ## 9. Entscheidung
@@ -301,26 +296,14 @@ Notion wurde ausgewählt, weil:
 8. Nutzerfeedback früh eingeholt werden kann, bevor hohe Entwicklungskosten entstehen
 
 Notion besitzt nicht in jedem Kriterium die stärksten Funktionen. Die Plattform
+
 bietet jedoch das beste Verhältnis zwischen Funktionsumfang, Entwicklungszeit,
+
 Zugänglichkeit und Portfolio-Nutzen für die erste Version.
 
-## 10. Zweistufige Produktstrategie
+## 10. Bedingungen für eine spätere Neubeurteilung
 
-### Stufe 1: Notion-Prototyp
-
-In der ersten Stufe werden folgende Ziele verfolgt:
-
-- tatsächliche Bedürfnisse der Zielgruppe überprüfen
-- Informationsarchitektur und Benutzerführung testen
-- Must-have-Funktionen umsetzen
-- Bedienbarkeit auf Desktop und Smartphone prüfen
-- Zahlungsbereitschaft und Nachfrage untersuchen
-- wiederkehrende Probleme und technische Grenzen dokumentieren
-
-### Stufe 2: mögliche eigene Anwendung
-
-Eine eigene Webanwendung wird erst geprüft, wenn der Notion-Prototyp klare
-Grenzen erreicht oder eine nachweisbare Nachfrage besteht.
+Eine eigene Webanwendung wird erst geprüft, wenn der Notion-Prototyp klare Grenzen erreicht oder eine nachweisbare Nachfrage besteht.
 
 Mögliche Auslöser sind:
 
@@ -333,9 +316,7 @@ Mögliche Auslöser sind:
 - das Produkt erreicht regelmässige Einnahmen, die Entwicklung und Betrieb finanzieren können
 - Tests zeigen, dass die Notion-Bedienung die Zielgruppe wesentlich behindert
 
-Das Erreichen eines einzelnen Auslösers führt noch nicht automatisch zur
-Neuentwicklung. Vorher ist eine separate Wirtschaftlichkeits- und
-Risikoanalyse erforderlich.
+Das Erreichen eines einzelnen Auslösers führt noch nicht automatisch zur Neuentwicklung. Vorher ist eine separate Wirtschaftlichkeits- und Risikoanalyse erforderlich.
 
 ## 11. Auswirkungen auf die Planung
 
@@ -377,36 +358,36 @@ Die Plattformevaluation gilt als abgeschlossen, weil:
 - eine spätere Neubeurteilung anhand konkreter Auslöser vorgesehen ist
 
 Damit ist die Plattformfrage für den ersten Prototyp ausreichend geklärt und
+
 die Planung des Notion-Systems kann beginnen.
 
 ## 14. Quellen
 
 ### Notion
 
-- [Notion – Tarife](https://www.notion.com/pricing)
-- [Notion – Datenbankautomatisierungen](https://www.notion.com/help/database-automations)
-- [Notion – Datenbankvorlagen](https://www.notion.com/help/database-templates)
-- [Notion – Formulare](https://www.notion.com/help/forms)
-- [Notion für Bildung](https://www.notion.com/help/notion-for-education)
+- [Notion – Tarife](https\://www\.notion.com/pricing)
+- [Notion – Datenbankautomatisierungen](https\://www\.notion.com/help/database-automations)
+- [Notion – Datenbankvorlagen](https\://www\.notion.com/help/database-templates)
+- [Notion – Formulare](https\://www\.notion.com/help/forms)
+- [Notion für Bildung](https\://www\.notion.com/help/notion-for-education)
 
 ### Coda
 
-- [Coda – Tarife](https://coda.io/pricing)
-- [Coda – Abrechnung und Doc Makers](https://help.coda.io/hc/en-us/articles/39555725230989-Billing-and-pricing-basics)
-- [Coda – Dokumentlimits](https://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits)
-- [Coda – Automatisierungen](https://help.coda.io/hc/en-us/articles/39555778179853-Automations-in-Coda)
+- [Coda – Tarife](https\://coda.io/pricing)
+- [Coda – Abrechnung und Doc Makers](https\://help.coda.io/hc/en-us/articles/39555725230989-Billing-and-pricing-basics)
+- [Coda – Dokumentlimits](https\://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits)
+- [Coda – Automatisierungen](https\://help.coda.io/hc/en-us/articles/39555778179853-Automations-in-Coda)
 
 ### Airtable
 
-- [Airtable – Tarife](https://airtable.com/pricing)
-- [Airtable – Tarifübersicht](https://support.airtable.com/docs/airtable-plans)
-- [Airtable – Automatisierungen](https://support.airtable.com/docs/getting-started-with-airtable-automations)
-- [Airtable – Interfaces teilen](https://support.airtable.com/docs/managing-and-sharing-interfaces)
+- [Airtable – Tarife](https\://airtable.com/pricing)
+- [Airtable – Tarifübersicht](https\://support.airtable.com/docs/airtable-plans)
+- [Airtable – Automatisierungen](https\://support.airtable.com/docs/getting-started-with-airtable-automations)
+- [Airtable – Interfaces teilen](https\://support.airtable.com/docs/managing-and-sharing-interfaces)
 
 ### Microsoft Power Apps
 
-- [Microsoft – Power Platform Lizenzübersicht](https://learn.microsoft.com/en-us/power-platform/admin/pricing-billing-skus)
-- [Microsoft – Power Apps Dokumentation](https://learn.microsoft.com/en-us/power-apps/)
-- [Microsoft – Power Apps für Bildung](https://learn.microsoft.com/en-us/microsoft-365/education/guide/1-addons/addons-powerapps)
-- [Microsoft – Microsoft 365 Education](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
-
+- [Microsoft – Power Platform Lizenzübersicht](https\://learn.microsoft.com/en-us/power-platform/admin/pricing-billing-skus)
+- [Microsoft – Power Apps Dokumentation](https\://learn.microsoft.com/en-us/power-apps/)
+- [Microsoft – Power Apps für Bildung](https\://learn.microsoft.com/en-us/microsoft-365/education/guide/1-addons/addons-powerapps)
+- [Microsoft – Microsoft 365 Education](https\://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
