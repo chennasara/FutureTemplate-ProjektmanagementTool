@@ -80,7 +80,7 @@ Als mögliche sekundäre Zielgruppen werden betrachtet:
 - Einzelpersonen, die kleinere persönliche Projekte organisieren
 Ob und in welchem Umfang diese Gruppen in der ersten Version berücksichtigt werden, wird nach der Anforderungsanalyse entschieden.
 ---
-## 6. Bedürfnisse der Zielgruppen
+## 6. Bedürfnisse der Zielgruppen UMFRAGE LÄUFT IM MOMENT! 
 Die folgenden Bedürfnisse wurden zu Beginn des Projekts angenommen. Sie müssen noch durch Befragungen, Interviews oder Tests mit potenziellen Nutzerinnen und Nutzern überprüft werden.
 | ID | Angenommenes Bedürfnis | Status |
 |---|---|---|

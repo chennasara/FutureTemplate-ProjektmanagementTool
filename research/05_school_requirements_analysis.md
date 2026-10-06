@@ -11,25 +11,31 @@ Die Analyse konzentriert sich auf Anforderungen, die für Schülerinnen, Schüle
 
 | Projekt oder Bildungsbereich | Institution | Grundlage | Status |
 |---|---|---|---|
-| Interdisziplinäre Projektarbeit (IDPA) | BBZ Schaffhausen | Projektvorgaben und eigene Projekterfahrung | Analysiert |
+| (Persönliche Analyse) Interdisziplinäre Projektarbeit (IDPA) | BBZ Schaffhausen | Projektvorgaben und eigene Projekterfahrung | Analysiert |
+| Interdisziplinäre Projektarbeit (IDPA) | BBZ Schaffhausen | Projektvorgaben und eigene Projekterfahrung |  |
 | Modulprojekt Informatik |  |  |  |
 | Abschlussarbeit oder Vertiefungsarbeit |  |  |  |
 | Hochschulprojekt |  |  |  |
 
 ## 3. Wiederkehrende Bestandteile
 
-| Bestandteil | IDPA | Modulprojekt | Weitere Vorgabe | Relevanz für das Template |
-|---|---:|---:|---:|---|
-| Projektziel oder Fragestellung | Ja |  |  | Checkliste und Projektübersicht |
-| Aufgabenverteilung | Ja |  |  | Personen- und Aufgabenverwaltung |
-| Termin- und Meilensteinplanung | Ja |  |  | Zeitplan und Kalender |
-| Projektdokumentation | Ja |  |  | Dokumentationsvorlage |
-| Quellenverzeichnis | Ja |  |  | Abgabecheckliste |
-| Persönliche Reflexion | Ja |  |  | Reflexionsvorlage |
-| Lernjournal | Ja |  |  | Wiederkehrende Dokumentation |
-| Präsentation | Ja |  |  | Präsentationscheckliste |
-| Endprodukt | Ja |  |  | Meilenstein und Abgabe |
-| Freigabe oder Abnahme |  |  |  | Abschlussstatus |
+| Bestandteil                          | IDPA | Modulprojekt | Weitere Vorgabe | Relevanz für das Template               |
+| :----------------------------------- | ---: | -----------: | --------------: | :-------------------------------------- |
+| Projektziel oder Fragestellung       |   Ja |              |                 | Checkliste und Projektübersicht         |
+| Aufgabenverteilung                   |   Ja |              |                 | Personen- und Aufgabenverwaltung        |
+| Termin- und Meilensteinplanung       |   Ja |              |                 | Zeitplan und Kalender                   |
+| Projektdokumentation                 |   Ja |              |                 | Dokumentationsvorlage                   |
+| Quellenverzeichnis                   |   Ja |              |                 | Bestandteil der Abgabecheckliste        |
+| Persönliche Reflexion                |   Ja |              |                 | Reflexionsvorlage                       |
+| Lernjournal                          |   Ja |              |                 | Laufende persönliche Dokumentation      |
+| Präsentation                         |   Ja |              |                 | Präsentationscheckliste                 |
+| Endprodukt                           |   Ja |              |                 | Meilenstein und Abgabe                  |
+| Freigabe oder Abnahme                |      |              |                 | Abschlussstatus                         |
+| Projektmethoden und Vorgehensmodelle |      |              |                 | Anpassbare Projektphasen                |
+| Bewertungskriterien                  |      |              |                 | Optionale Bewertungscheckliste          |
+| Formale Dokumentationsvorgaben       |      |              |                 | Formale Anforderungen der Abgabe        |
+| Individuelle Leistungsnachweise      |      |              |                 | Persönlicher Leistungsnachweis          |
+
 
 ## 4. Typische Projektphasen
 
@@ -69,8 +75,14 @@ Aus der Analyse ergeben sich folgende mögliche Anforderungen an das Template:
 - Der Arbeitsfortschritt muss sichtbar dargestellt werden.
 - Persönliche und gemeinsame Aufgaben müssen unterscheidbar sein.
 - Am Projektende muss eine Reflexion möglich sein.
+- Einzelne Aufgaben müssen einen Bearbeitungsstatus erhalten können.
+- Der Projektfortschritt soll anhand der abgeschlossenen Aufgaben dargestellt werden können.
+- Geplante und tatsächliche Fertigstellungstermine sollen miteinander verglichen werden können 
+(eine Produktidee und keine nachgewiesene schulische Anforderung).
+- Projektvorlagen sollen an unterschiedliche schulische Projektarten angepasst werden können.
+- Nicht benötigte Bestandteile sollen ausgeblendet oder entfernt werden können.
 
-Diese Anforderungen werden anschliessend mit den Ergebnissen der Zielgruppenbefragung verglichen. Erst Anforderungen, die bestätigt oder nachvollziehbar begründet werden können, werden in den verbindlichen Projektumfang übernommen.
+Diese Anforderungen werden anschliessend mit den Ergebnissen der Zielgruppenbefragung verglichen. **Erst Anforderungen, die bestätigt oder nachvollziehbar begründet werden können, werden in den verbindlichen Projektumfang übernommen.**
 
 ## 7. Offene Punkte
 

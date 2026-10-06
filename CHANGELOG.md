@@ -4,6 +4,19 @@ Interval: 1 week
 
 # unreleased 
 
+## 02.10.2026
+### Added 
+- several new Files
+  - [03_data_collection_and_privacy.md](03_data_collection_and_privacy.md)
+  - [04_user_survey.md](04_user_survey.md)
+  - [05_school_requirements_analysis.md](05_school_requirements_analysis.md)
+- All of them already have been filled with the documentation of this Project
+- Documentation has also taken place in other Files.
+
+### Changed 
+- [01_project_overview.md](01_project_overview.md), has been changed and shortened.
+
+
 ## 27.09.2026
 ### Added
 - Research folder got added, alongside with two files
@@ -12,7 +25,7 @@ Interval: 1 week
 - Forms survey has been added and first tester has been initiated.
 
 ### Changed
-- 01_project_overview.md, has been changed and prepping time has inreased.
+- [01_project_overview.md](01_project_overview.md), has been changed and prepping time has inreased.
 
 --- 
 ## 20.09.2026
@@ -24,9 +37,6 @@ Interval: 1 week
 
 ### Changed
 - README File has been updated
-
-
-
 
 
 ## 19.09.2026
