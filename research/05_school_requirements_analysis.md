@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | IPERKA phase | Inform |
-| Status | In Progress – further school requirements to be collected |
+| Status | In Progress, further school requirements to be collected |
 
 ## 1. Goal
 

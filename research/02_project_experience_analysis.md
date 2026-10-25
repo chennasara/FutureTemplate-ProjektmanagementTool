@@ -13,7 +13,7 @@ This analysis looks at organisational difficulties in my own past school, group 
 
 | Project | Type | My role | Relevance |
 |---|---|---|---|
-| IDPA – plant growth | Interdisciplinary group and final project (vocational baccalaureate) | Group member | Long project period, measurements, documentation and presentation |
+| IDPA: plant growth | Interdisciplinary group and final project (vocational baccalaureate) | Group member | Long project period, measurements, documentation and presentation |
 
 ## Observed problems
 

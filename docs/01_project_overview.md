@@ -39,7 +39,7 @@ Typical difficulties in school and study projects:
 
 **Central question**
 
-> How can a clear and easy-to-understand web app support students in planning, running and reviewing their projects – without prior training?
+> How can a clear and easy-to-understand web app support students in planning, running and reviewing their projects, without prior training?
 
 ## 3. Project goal
 

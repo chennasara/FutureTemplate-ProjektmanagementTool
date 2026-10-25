@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | IPERKA phase | Inform |
-| Status | In Progress – collecting responses |
+| Status | In Progress, collecting responses |
 | Responses so far | 5 (as of 25 October 2026) |
 
 ## 1. Goal

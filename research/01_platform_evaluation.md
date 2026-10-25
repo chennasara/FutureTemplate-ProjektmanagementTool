@@ -9,7 +9,7 @@
 | Decision subject | Platform for the first working prototype |
 | Result at the time | Notion ([ADR-001](../decisions/ADR-001-notion-as-first-prototype.md)) |
 
-> **Note (24 October 2026):** This decision was revised. The project is now built as a web app with ASP.NET Core and Blazor – see [ADR-002](../decisions/ADR-002-switch-to-aspnet-core-blazor.md). This evaluation is kept unchanged as part of the decision history.
+> **Note (24 October 2026):** This decision was revised. The project is now built as a web app with ASP.NET Core and Blazor (see [ADR-002](../decisions/ADR-002-switch-to-aspnet-core-blazor.md)). This evaluation is kept unchanged as part of the decision history.
 
 ## 1. Question
 
@@ -84,15 +84,15 @@ Maximum total: 100 points.
 
 ## 7. Summary per option
 
-**Notion** – Pages and databases in one system, many views, formulas, relations and rollups, templates can be duplicated and sold. Limits: no editable automations on the free plan, guest and file limits, one native chart, no own user management, no central updates for duplicated templates.
+**Notion:** Pages and databases in one system, many views, formulas, relations and rollups, templates can be duplicated and sold. Limits: no editable automations on the free plan, guest and file limits, one native chart, no own user management, no central updates for duplicated templates.
 
-**Coda** – Strong formulas and automations, app-like documents. Limits: free shared documents limited to 50 objects and 1,000 rows, less known among students.
+**Coda:** Strong formulas and automations, app-like documents. Limits: free shared documents limited to 50 objects and 1,000 rows, less known among students.
 
-**Airtable** – Powerful relational data and interfaces. Limits: less suited to long-form documentation, free-plan limits on automations and records.
+**Airtable:** Powerful relational data and interfaces. Limits: less suited to long-form documentation, free-plan limits on automations and records.
 
-**Microsoft Power Apps** – Highly customisable, integrates with Microsoft 365. Limits: licensing depends on the school's plans, premium connectors cost extra, often requires IT administration.
+**Microsoft Power Apps:** Highly customisable, integrates with Microsoft 365. Limits: licensing depends on the school's plans, premium connectors cost extra, often requires IT administration.
 
-**Custom web app** – Full control over UI, accounts, roles, automations and business model; central updates for all users. Limits: high effort for one person; hosting, security, backups and privacy must be handled in-house.
+**Custom web app:** Full control over UI, accounts, roles, automations and business model; central updates for all users. Limits: high effort for one person; hosting, security, backups and privacy must be handled in-house.
 
 ## 8. Defined triggers for re-evaluation
 
@@ -105,7 +105,7 @@ A custom web app was to be re-evaluated if, among others:
 - Notion's automation is not sufficient for core processes
 - tests show that Notion's UI significantly hinders the target group
 
-Two of these triggers – central account management and roles/permissions – became relevant when planning group collaboration in detail. This led to [ADR-002](../decisions/ADR-002-switch-to-aspnet-core-blazor.md).
+Two of these triggers, central account management and roles/permissions, became relevant when planning group collaboration in detail. This led to [ADR-002](../decisions/ADR-002-switch-to-aspnet-core-blazor.md).
 
 ## 9. Reflection
 
