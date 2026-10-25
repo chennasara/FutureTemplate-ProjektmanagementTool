@@ -36,7 +36,7 @@ Working title: **Guidance by FutureTemplates**.
 | Option | Why not chosen |
 |---|---|
 | Keep Notion | Fast, but cannot deliver accounts, permissions and school adaptation |
-| Browser-only web app without backend (local storage, file export) | Little effort, but no group collaboration – the core need |
+| Browser-only web app without backend (local storage, file export) | Little effort, but no group collaboration, which is the core need |
 | JavaScript stack (e.g. React + Node.js) | Would require learning a new language and ecosystem within the timeframe |
 | Low-code (Power Apps) | Licensing and IT administration dependence, hard to distribute to individuals |
 

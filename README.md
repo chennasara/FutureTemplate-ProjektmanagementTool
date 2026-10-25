@@ -1,6 +1,6 @@
 # Guidance by FutureTemplates
 
-**A project management web app that helps students plan, run and finish school and study projects – without needing a training course first.**
+**A project management web app that helps students plan, run and finish school and study projects, without needing a training course first.**
 
 > **Status:** Information phase · walking skeleton planned for 31 December 2026
 > This repository documents the whole development process, from research to release. Features are only marked as *Implemented* or *Tested* once they actually are.
@@ -9,7 +9,7 @@
 
 ## The problem
 
-Students at vocational schools, baccalaureate schools, universities of applied sciences and universities regularly work on projects – often in small groups and under deadlines. Tasks, deadlines, responsibilities and documents end up scattered across chats, files and tools. Existing project management software is built for companies and is usually too heavy for a school project.
+Students at vocational schools, baccalaureate schools, universities of applied sciences and universities regularly work on projects, often in small groups and under deadlines. Tasks, deadlines, responsibilities and documents end up scattered across chats, files and tools. Existing project management software is built for companies and is usually too heavy for a school project.
 
 **Guidance** brings the essentials into one place and guides students through a proven project process (IPERKA), so they learn *how* to approach a project while they work on it.
 
@@ -86,13 +86,12 @@ Survey and test data are never published in this repository. Only anonymised, ag
 
 ## About me
 
-**Sara Chenna** – Founder of FutureTemplates
+**Sara Chenna**, Founder of FutureTemplates
 Apprentice ICT specialist (Informatikerin EFZ), specialising in platform development.
 
 Besides this project, I create and sell Notion productivity templates under FutureTemplates.
 
 - LinkedIn: [linkedin.com/in/sara-chenna](https://www.linkedin.com/in/sara-chenna)
-- Email: chennasara07@gmail.com
 
 ## Licence
 

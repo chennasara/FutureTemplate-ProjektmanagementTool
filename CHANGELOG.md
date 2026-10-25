@@ -29,10 +29,19 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 #### Fixed
 - Broken links between documents
+- Local changes from 2026-10-06 merged into the English documentation
+
+### 2026-10-06
+#### Changed
+- [School requirements analysis](research/05_school_requirements_analysis.md) extended: four additional components and five additional derived requirements
 
 ### 2026-10-02
+#### Added
+- [Data collection and privacy](research/03_data_collection_and_privacy.md), [user survey](research/04_user_survey.md) and [school requirements analysis](research/05_school_requirements_analysis.md), each filled with first documentation
+
 #### Changed
-- Information and data in the documentation updated
+- Project overview revised and shortened
+- Documentation updated in further files
 
 ### 2026-09-27
 #### Added

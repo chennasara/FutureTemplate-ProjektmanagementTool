@@ -3,14 +3,14 @@
 | | |
 |---|---|
 | IPERKA phase | Inform → Plan |
-| Status | Draft – to be validated with survey results |
+| Status | Draft, to be validated with survey results |
 
 Requirements are written as user stories with acceptance criteria and prioritised with MoSCoW:
 
-- **Must** – required for the walking skeleton
-- **Should** – important, but not required for the walking skeleton
-- **Could** – useful for a later extension
-- **Won't** – not part of the current project scope
+- **Must:** required for the walking skeleton
+- **Should:** important, but not required for the walking skeleton
+- **Could:** useful for a later extension
+- **Won't:** not part of the current project scope
 
 The draft below covers the walking skeleton. It will be checked and extended after the [user survey](../research/04_user_survey.md) has been evaluated (week 2).
 

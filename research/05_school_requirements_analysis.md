@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | IPERKA phase | Inform |
-| Status | In Progress – further school requirements to be collected |
+| Status | In Progress, further school requirements to be collected |
 
 ## 1. Goal
 
@@ -13,7 +13,8 @@ This analysis identifies which components, documents and deliverables are repeat
 
 | Project or education level | Institution | Basis | Status |
 |---|---|---|---|
-| Interdisciplinary project work (IDPA) | BBZ Schaffhausen | Project guidelines and own experience | Analysed |
+| IDPA (personal analysis) | BBZ Schaffhausen | Own project experience | Analysed |
+| IDPA (official guidelines) | BBZ Schaffhausen | Project guidelines | Open |
 | ICT module project | | | Open |
 | Final or in-depth thesis | | | Open |
 | University project | | | Open |
@@ -26,12 +27,16 @@ This analysis identifies which components, documents and deliverables are repeat
 | Task allocation | Yes | | | Members and task assignment |
 | Schedule and milestones | Yes | | | Deadlines and calendar |
 | Project documentation | Yes | | | Documentation template |
-| List of sources | Yes | | | Submission checklist |
+| List of sources | Yes | | | Part of the submission checklist |
 | Personal reflection | Yes | | | Reflection template |
-| Learning journal | Yes | | | Recurring documentation |
+| Learning journal | Yes | | | Ongoing personal documentation |
 | Presentation | Yes | | | Presentation checklist |
 | Final product | Yes | | | Milestone and submission |
 | Approval or sign-off | | | | Closure status |
+| Project methods and process models | | | | Customisable project phases |
+| Assessment criteria | | | | Optional assessment checklist |
+| Formal documentation requirements | | | | Formal requirements of the submission |
+| Individual proof of performance | | | | Personal proof of performance |
 
 ## 4. Typical project phases
 
@@ -67,8 +72,13 @@ This analysis identifies which components, documents and deliverables are repeat
 - Progress is visible.
 - Personal and shared tasks can be distinguished.
 - A reflection is possible at the end of a project.
+- Each task can have a status.
+- Project progress can be shown based on completed tasks.
+- Planned and actual completion dates can be compared (a product idea, not a proven school requirement).
+- Project templates can be adapted to different types of school projects.
+- Components that are not needed can be hidden or removed.
 
-These are compared with the survey results. Only confirmed or well-justified requirements are added to the binding scope.
+These are compared with the survey results. **Only confirmed or well-justified requirements are added to the binding scope.**
 
 ## 7. Open points
 
