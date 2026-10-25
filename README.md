@@ -92,7 +92,6 @@ Apprentice ICT specialist (Informatikerin EFZ), specialising in platform develop
 Besides this project, I create and sell Notion productivity templates under FutureTemplates.
 
 - LinkedIn: [linkedin.com/in/sara-chenna](https://www.linkedin.com/in/sara-chenna)
-- Email: chennasara07@gmail.com
 
 ## Licence
 
