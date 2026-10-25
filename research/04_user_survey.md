@@ -1,242 +1,176 @@
-# Zielgruppenbefragung
+# User Survey
 
-**Zu bearbeiten:** 5, 8, 9, 10, 11 und 13
-
-## 1. Ziel der Befragung
-
-Die Zielgruppenbefragung untersucht, welche Schwierigkeiten bei schulischen und studentischen Projektarbeiten auftreten und welche Funktionen eines Projektmanagement-Templates tatsächlich benötigt werden.
-
-Die Ergebnisse dienen dazu, eigene Annahmen zu überprüfen, Anforderungen zu priorisieren und den Funktionsumfang der ersten Version festzulegen.
-
-## 2. Forschungsfragen
-
-Mit der Befragung sollen insbesondere folgende Fragen beantwortet werden:
-
-- Welche Schwierigkeiten treten bei Projektarbeiten besonders häufig auf?
-- Wie organisieren die Teilnehmenden ihre Projekte bisher?
-- Welche Werkzeuge werden bereits verwendet?
-- Welche Funktionen werden als besonders hilfreich eingeschätzt?
-- Welche Checklisten und Vorlagen werden benötigt?
-- Welche Erfahrungen bestehen bereits mit Notion?
-- Welche Hindernisse könnten die Nutzung des Templates erschweren?
-- Besteht Interesse an einem späteren Produkttest?
-
-## 3. Zielgruppe
-
-Die Befragung richtet sich an:
-
-- Schülerinnen und Schüler
-- Lernende
-- Studierende
-- Personen, die bereits schulische oder studentische Projektarbeiten durchgeführt haben
-
-Folgende Bildungsbereiche sollen nach Möglichkeit vertreten sein:
-
-- Berufsschule
-- Berufsmaturitätsschule
-- Gymnasium
-- Fachhochschule
-- Universität
-
-## 4. Erhebungsmethode
-
-| Angabe | Wert |
+| | |
 |---|---|
-| Erhebungsmethode | Standardisierte Onlinebefragung |
-| Werkzeug | Microsoft Forms |
-| Art der Fragen | Auswahlfragen, Bewertungsfragen und freiwillige Freitextfragen |
-| Geschätzte Bearbeitungszeit | 5 bis 8 Minuten |
-| Teilnahme | Freiwillig |
-| Erfassung von Namen | Nein |
-| Erfassung von E-Mail-Adressen | Freiwillig für die Kontaktaufnahme zu einem späteren Produkttest |
-| Verantwortliche Person | Sara Chenna |
-| Status | Vorbereitet |
+| IPERKA phase | Inform |
+| Status | In Progress – collecting responses |
+| Responses so far | 5 (as of 25 October 2026) |
 
-Informationen zur Datenerhebung, Speicherung und Löschung befinden sich in [`03_data_collection_and_privacy.md`](03_data_collection_and_privacy.md).
+## 1. Goal
 
-## 5. Durchführung
+The survey explores which difficulties occur in school and study projects and which features a project management tool really needs. The results are used to check assumptions, prioritise requirements and define the scope of the first version.
 
-| Angabe | Wert |
+## 2. Research questions
+
+- Which difficulties occur most often in projects?
+- How do participants currently organise their projects?
+- Which tools do they already use?
+- Which features do they consider most helpful?
+- Which checklists and templates are needed?
+- How experienced are they with project tools?
+- What could prevent them from using a new tool?
+- Are they interested in a later product test?
+
+## 3. Target group
+
+Students, apprentices and anyone who has worked on school or study projects. The following education levels should be represented:
+
+- Vocational school (Berufsschule)
+- Vocational baccalaureate (BMS)
+- Upper secondary school (Gymnasium)
+- University of applied sciences
+- University
+
+## 4. Method
+
+| | |
 |---|---|
-| Beginn der Befragung |  |
-| Ende der Befragung |  |
-| Verbreitungskanäle |  |
-| Link zur Befragung |  |
-| Angestrebte Anzahl Teilnehmender |  |
-| Tatsächliche Anzahl Teilnehmender |  |
-| Anzahl vollständig ausgefüllter Antworten |  |
-| Anzahl unvollständiger Antworten |  |
+| Method | Standardised online survey |
+| Tool | Microsoft Forms |
+| Question types | Multiple choice, ratings, optional free text |
+| Estimated duration | 5–8 minutes |
+| Participation | Voluntary |
+| Names collected | No |
+| Email addresses | Optional, only for contact about later testing |
+| Responsible | Sara Chenna |
 
+> The survey was designed while the first prototype was still planned in Notion. Its questions about project problems, features and checklists remain valid for the web app. Questions about Notion experience are interpreted as general experience with digital project tools.
 
+Privacy details: [03_data_collection_and_privacy.md](03_data_collection_and_privacy.md)
 
+## 5. Distribution
 
-Die Umfrage wird innerhalb der definierten Zielgruppe verbreitet. Vor der Veröffentlichung wird sie von mindestens einer Person auf Verständlichkeit, technische Funktion und Bearbeitungsdauer geprüft.
-
-## 6. Aufbau der Befragung
-
-Die Befragung ist in folgende Themenbereiche gegliedert:
-
-| Themenbereich | Untersuchungszweck |
-|---|---|
-| Bildungsbereich | Einordnung der Teilnehmenden |
-| Projekterfahrung | Einschätzung der bisherigen Erfahrung |
-| Bisherige Organisation | Ermittlung verwendeter Arbeitsweisen und Werkzeuge |
-| Schwierigkeiten | Identifikation wiederkehrender Probleme |
-| Gewünschte Funktionen | Priorisierung des Funktionsumfangs |
-| Checklisten und Vorlagen | Planung geeigneter Inhalte |
-| Notion-Erfahrung | Einschätzung der notwendigen Einführung |
-| Nutzungshindernisse | Ermittlung möglicher Akzeptanzprobleme |
-| Produkttest | Gewinnung freiwilliger Testpersonen |
-
-Die vollständigen Fragen werden nicht nochmals in dieser Datei aufgeführt, sofern sie bereits in Microsoft Forms dokumentiert sind. Dadurch werden unnötige Dopplungen vermieden.
-
-## 7. Qualitätssicherung vor der Veröffentlichung
-
-Vor der Veröffentlichung werden folgende Punkte kontrolliert:
-
-- [ ] Einleitung und Ziel der Befragung sind verständlich.
-- [ ] Die geschätzte Bearbeitungszeit ist angegeben.
-- [ ] Die Teilnahme wird als freiwillig bezeichnet.
-- [ ] Microsoft Forms erfasst Namen nicht automatisch.
-- [ ] Pflichtfragen sind auf notwendige Angaben beschränkt.
-- [ ] Die Angabe einer E-Mail-Adresse ist freiwillig.
-- [ ] Der Zweck der E-Mail-Adresse wird erklärt.
-- [ ] Es werden keine vertraulichen oder besonders schützenswerten Daten verlangt.
-- [ ] Alle Antwortmöglichkeiten sind verständlich formuliert.
-- [ ] Mehrfachauswahl ist nur dort aktiviert, wo sie sinnvoll ist.
-- [ ] Die Umfrage wurde auf einem Computer und einem Smartphone getestet.
-- [ ] Eine Testperson hat die Umfrage auf Verständlichkeit geprüft.
-
-## 8. Zusammensetzung der Teilnehmenden
-
-Dieser Abschnitt wird nach Abschluss der Befragung ausgefüllt.
-
-| Bildungsbereich | Anzahl | Anteil |
-|---|---:|---:|
-| Berufsschule |  |  |
-| Berufsmaturitätsschule |  |  |
-| Gymnasium |  |  |
-| Fachhochschule |  |  |
-| Universität |  |  |
-| Sonstiger Bereich |  |  |
-| **Gesamt** |  | **100 %** |
-
-| Kontakt/Funktion | Organisation | Zweck | Status |
+| Contact | Organisation | Purpose | Status |
 |---|---|---|---|
-| eigene Informatikklasse | BBZ | Umfrage | **3 Antworten erhalten** |
-| Lehrperson mit Zugang zu weiteren Klassen | BBZ | Multiplikator | Noch nicht kontaktiert |
-| zuständige Stelle für Umfrageweiterleitung | Kantonsschule SH | Gymnasium/FMS erreichen | Noch nicht kontaktiert |
-| zuständige Stelle für Umfrageweiterleitung | HKV SH | KV-Lernende erreichen | Noch nicht kontaktiert |
-| Schülerorganisation | Kantonsschule SH | spätere Verbreitung | **B – Demnächst** |
+| Own ICT class | BBZ Schaffhausen | Survey | Responses received |
+| Teacher with access to other classes | BBZ Schaffhausen | Multiplier | To contact |
+| Office responsible for surveys | Kantonsschule Schaffhausen | Reach Gymnasium / FMS students | To contact |
+| Office responsible for surveys | HKV Schaffhausen | Reach commercial apprentices | To contact |
+| Student organisation | Kantonsschule Schaffhausen | Further distribution | Planned |
 
-## 9. Zentrale Ergebnisse
+| | |
+|---|---|
+| Start | |
+| End | |
+| Target number of responses | |
+| Complete responses | |
+| Incomplete responses | |
 
-Dieser Abschnitt wird nach Abschluss der Befragung ausgefüllt.
+## 6. Quality checks before publication
 
-### 9.1 Häufigste Schwierigkeiten
+- [ ] Introduction and goal are clear.
+- [ ] Estimated duration is stated.
+- [ ] Participation is described as voluntary.
+- [ ] Microsoft Forms does not record names automatically.
+- [ ] Required questions are limited to necessary information.
+- [ ] Email address is optional and its purpose explained.
+- [ ] No confidential or sensitive data is requested.
+- [ ] All answer options are clearly worded.
+- [ ] Multiple choice is only enabled where it makes sense.
+- [ ] Survey tested on a computer and a smartphone.
+- [ ] One test person checked the survey for clarity.
 
-| Rang | Schwierigkeit | Anzahl Nennungen | Anteil |
-|---:|---|---:|---:|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
+## 7. Participants
 
-### 9.2 Gewünschte Funktionen
+*To be completed after the survey closes.*
 
-| Rang | Funktion | Anzahl Nennungen | Anteil | Konsequenz |
-|---:|---|---:|---:|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
-
-### 9.3 Gewünschte Checklisten und Vorlagen
-
-| Checkliste oder Vorlage | Anzahl Nennungen | Priorität |
-|---|---:|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-
-### 9.4 Erfahrung mit Notion
-
-| Erfahrungsstufe | Anzahl | Anteil |
+| Education level | Count | Share |
 |---|---:|---:|
-| Keine Erfahrung |  |  |
-| Geringe Erfahrung |  |  |
-| Durchschnittliche Erfahrung |  |  |
-| Fortgeschrittene Erfahrung |  |  |
+| Vocational school | | |
+| Vocational baccalaureate | | |
+| Upper secondary school | | |
+| University of applied sciences | | |
+| University | | |
+| Other | | |
+| **Total** | | **100 %** |
 
-### 9.5 Nutzungshindernisse
+## 8. Results
 
-| Nutzungshindernis | Anzahl Nennungen | Mögliche Massnahme |
+*To be completed after the survey closes.*
+
+### 8.1 Most common difficulties
+
+| Rank | Difficulty | Mentions | Share |
+|---:|---|---:|---:|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+
+### 8.2 Desired features
+
+| Rank | Feature | Mentions | Share | Consequence |
+|---:|---|---:|---:|---|
+| 1 | | | | |
+| 2 | | | | |
+| 3 | | | | |
+
+### 8.3 Desired checklists and templates
+
+| Checklist or template | Mentions | Priority |
 |---|---:|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| | | |
 
-## 10. Auswertung der Freitextantworten
+### 8.4 Experience with project tools
 
-Freitextantworten werden thematisch zusammengefasst. Einzelne Aussagen werden nur veröffentlicht, wenn dadurch keine Person identifiziert werden kann.
+| Level | Count | Share |
+|---|---:|---:|
+| None | | |
+| Little | | |
+| Average | | |
+| Advanced | | |
 
-| Kategorie | Zusammenfassung | Häufigkeit |
+### 8.5 Barriers to use
+
+| Barrier | Mentions | Possible measure |
+|---|---:|---|
+| | | |
+
+## 9. Free-text answers
+
+Free-text answers are grouped by theme. Individual statements are only published if no person can be identified.
+
+| Category | Summary | Frequency |
 |---|---|---:|
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| | | |
 
-## 11. Abgeleitete Anforderungen
+## 10. Derived requirements
 
-Aus den Ergebnissen werden Anforderungen an das Template abgeleitet und anschliessend in `docs/02_requirements.md` priorisiert.
+Requirements derived from the results are prioritised in [02_requirements.md](../docs/02_requirements.md).
 
-| Erkenntnis aus der Befragung | Abgeleitete Anforderung | Priorität | Übernommen |
-|---|---|---|---:|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| Finding | Derived requirement | Priority | Adopted |
+|---|---|---|:---:|
+| | | | |
 
-Die Priorisierung erfolgt nach folgenden Kategorien:
+## 11. Limitations
 
-- **Must:** für die erste Version zwingend erforderlich
-- **Should:** wichtig, aber nicht zwingend für die erste Version
-- **Could:** sinnvoll für eine spätere Erweiterung
-- **Won't:** wird im aktuellen Projektumfang nicht umgesetzt
+- The number of participants may be small.
+- Education levels may not be evenly represented.
+- Participation is voluntary and not a random sample.
+- Answers are personal assessments.
+- People from my own environment may be over-represented.
 
-## 12. Einschränkungen der Befragung
+## 12. Conclusion
 
-Bei der Interpretation der Ergebnisse werden folgende mögliche Einschränkungen berücksichtigt:
+*To be completed after the evaluation:* main problems of the target group, most requested features, confirmed and rejected assumptions, and consequences for the first version.
 
-- Die Anzahl der Teilnehmenden kann begrenzt sein.
-- Die Bildungsbereiche sind möglicherweise nicht gleichmässig vertreten.
-- Die Teilnahme erfolgt freiwillig und stellt keine zufällige Stichprobe dar.
-- Die Antworten beruhen auf persönlichen Einschätzungen.
-- Personen aus dem eigenen Umfeld könnten überdurchschnittlich stark vertreten sein.
-- Freitextantworten können unterschiedlich ausführlich ausfallen.
+## 13. Progress
 
-## 13. Fazit
-
-Das Fazit wird nach Abschluss der Auswertung ergänzt.
-
-Dabei werden folgende Punkte zusammengefasst:
-
-- wichtigste Probleme der Zielgruppe
-- am häufigsten gewünschte Funktionen
-- bestätigte und widerlegte Annahmen
-- Auswirkungen auf den Funktionsumfang
-- Konsequenzen für die Planung der ersten Version
-
-## 14. Status
-
-- [x] Ziel der Befragung definiert
-- [x] Zielgruppe definiert
-- [x] Fragen vorbereitet
-- [x] Datenschutz und Datenerhebung dokumentiert
-- [ ] Umfrage durch eine Testperson prüfen lassen
-- [ ] Umfrage veröffentlichen
-- [ ] Antworten sammeln
-- [ ] Ergebnisse anonymisiert auswerten
-- [ ] Anforderungen ableiten
-- [ ] Ergebnisse in der Planung berücksichtigen
+- [x] Goal defined
+- [x] Target group defined
+- [x] Questions prepared
+- [x] Privacy documented
+- [x] First responses collected (5)
+- [ ] Distributed to further schools
+- [ ] Results evaluated anonymously
+- [ ] Requirements derived
+- [ ] Results applied to planning

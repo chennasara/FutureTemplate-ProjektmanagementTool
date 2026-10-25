@@ -1,35 +1,57 @@
-## Changelog
-The important changes of the project are held in this Document.
-Interval: 1 week
+# Changelog
 
-# unreleased 
+All notable changes to this project are documented here, grouped by week.
+Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## 27.09.2026
-### Added
-- Research folder got added, alongside with two files
-  - [01_platform_evulation.md](01_platform_evulation.md)
-  - [02_project_experience_analysis.md](02_project_experience_analysis.md)
-- Forms survey has been added and first tester has been initiated.
+## [Unreleased]
 
-### Changed
-- 01_project_overview.md, has been changed and prepping time has inreased.
+### 2026-10-25
+#### Added
+- [ADR-002](decisions/ADR-002-switch-to-aspnet-core-blazor.md): switch from a Notion template to a web app with ASP.NET Core and Blazor
+- [ADR-001](decisions/ADR-001-notion-as-first-prototype.md) recorded retrospectively for the original Notion decision
+- ADR index and template in [decisions/README.md](decisions/README.md)
+- [Roadmap](docs/08_roadmap.md) for the walking skeleton until 31 December 2026
+- Draft user stories in [02_requirements.md](docs/02_requirements.md) and first [system design](docs/04_system_design.md)
+- [LICENSE](LICENSE): all rights reserved
+- Git workflow and use of AI documented in [03_methodology.md](docs/03_methodology.md)
 
---- 
-## 20.09.2026
-### Added 
-- Änderungen in folgenden Dateien: 01_project_overview.md; 03_methodology.md
-- Filled in Information about my workethic imto 03_methodology
-- Ended Planning Phase that has been going on since 18.09.2026- Offizielle Information dokumentation gezielter bearbeitet 
-- Idealer Kunde wurde zusammengefasst 
+#### Changed
+- Entire repository translated to English
+- Product named **Guidance by FutureTemplates** (working title, trademark check pending)
+- README rewritten for the web app with a clear separation of walking skeleton and later extensions
+- Project overview condensed and updated for the web app
+- Survey status updated: 5 responses, distribution to further schools
+- Branch protection on `main`: pull requests required, no force pushes or deletions, linear history
 
-### Changed
-- README File has been updated
+#### Removed
+- Empty example files
+- Notion-specific concept moved to [archive/notion-concept](archive/notion-concept/)
 
+#### Fixed
+- Broken links between documents
 
+### 2026-10-02
+#### Changed
+- Information and data in the documentation updated
 
+### 2026-09-27
+#### Added
+- Research folder with platform evaluation and analysis of own project experience
+- Microsoft Forms survey created; first test respondent invited
 
+#### Changed
+- Project overview updated; preparation time extended
 
-## 19.09.2026
-### Added 
-- Files and folders have been added into this project for more organization and readability.
+### 2026-09-20
+#### Added
+- Working method documented in methodology
+- Ideal user described
 
+#### Changed
+- Project overview and methodology updated
+- README updated
+- Planning phase (started 2026-09-18) completed
+
+### 2026-09-19
+#### Added
+- Folder and file structure for better organisation

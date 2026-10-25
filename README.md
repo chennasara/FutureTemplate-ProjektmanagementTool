@@ -1,477 +1,99 @@
-# FutureTemplate-ProjektmanagementTool
-This repository documents the development of a structured project management system in Notion. It covers requirements, database architecture, workflows, technical decisions, testing, challenges, and key learnings while demonstrating my structured approach and technical understanding.
+# Guidance by FutureTemplates
 
-# Notion Project Management System
+**A project management web app that helps students plan, run and finish school and study projects – without needing a training course first.**
 
-## 1. Projektbeschreibung
-
-Das Projektmanagement-Tool orientiert sich hauptsächlich am IPERKA-Modell. Die sechs Phasen Informieren, Planen, Entscheiden, Realisieren, Kontrollieren und Auswerten werden durch miteinander verbundene Notion-Datenbanken abgebildet. Ergänzend werden agile Elemente wie Kanban-Boards, laufende Priorisierung, 
-Feedback und Retrospektiven verwendet. Dadurch entsteht ein hybrider Ansatz, der eine struckturierte Projektdurchführung ermöglicht und gleichzeitig flexibel an unterschiedliche Projektarten angepasst werden kann.
-
-Dazu gehören:
-
-- Projektziele
-- Anforderungen
-- Aufgaben und Prioritäten
-- Termine und Meilensteine
-- Entscheidungen und Begründungen
-- Probleme und Lösungen
-- Tests und Feedback
-- Projektergebnisse
-- Learnings und Retrospektiven
-- Screenshots, Dateien und weitere Nachweise
-
-Das System soll für unterschiedliche Projektarten, im kleineren Umfang, eingesetzt werden können, beispielsweise:
-
-- Informatikprojekte
-- Schulprojekte
-- Notion-Produkte
-- Business-Ideen / Startup Ideen
-- persönliche Projekte
-
-Ein weiteres Ziel besteht darin, die eigene Arbeitsweise nachvollziehbar zu dokumentieren.
-Die Oberfläche soll Benutzerfreundlich sein und die Bearbeitung und Dokumetierung eines Projekts erleichtern.
+> **Status:** Information phase · walking skeleton planned for 31 December 2026
+> This repository documents the whole development process, from research to release. Features are only marked as *Implemented* or *Tested* once they actually are.
 
 ---
 
-## 2. Projektablauf
+## The problem
 
-Jedes Projekt soll eine klare und nachvollziehbare Entwicklung zeigen:
+Students at vocational schools, baccalaureate schools, universities of applied sciences and universities regularly work on projects – often in small groups and under deadlines. Tasks, deadlines, responsibilities and documents end up scattered across chats, files and tools. Existing project management software is built for companies and is usually too heavy for a school project.
 
-> Ausgangslage → Ziel → Anforderungen → Planung → Umsetzung → Testing → Ergebnis → Learnings
+**Guidance** brings the essentials into one place and guides students through a proven project process (IPERKA), so they learn *how* to approach a project while they work on it.
 
-Für die Entwicklung eines Notion-Produkts könnte der Ablauf beispielsweise so aussehen:
+## Planned scope
 
-> Idee → Zielgruppe → Nutzerproblem → Anforderungen → Planung → Entwicklung → Testing → Veröffentlichung → Feedback → Verbesserung
+### Walking skeleton (by 31 December 2026)
 
-Damit wird nicht nur das fertige Produkt dokumentiert, sondern auch der Weg dorthin.
-
----
-
-## 3. Grundprinzip des Systems
-
-Das Notion-System besteht aus drei Ebenen:
-
-### 3.1 Systemebene
-
-Die Systemebene enthält die zentralen Originaldatenbanken. In diesen Datenbanken werden alle Informationen gespeichert.
-
-### 3.2 Arbeitsebene
-
-Dashboards und Arbeitsbereiche zeigen gefilterte und sortierte Ansichten der zentralen Datenbanken.
-
-### 3.3 Projektebene
-
-Jede Projektseite zeigt nur die Aufgaben, Meilensteine, Entscheidungen und Dokumentationen, die zum jeweiligen Projekt gehören.
-
-Die Informationen werden dadurch nicht mehrfach gespeichert. Ein Datensatz wird einmal in einer zentralen Datenbank angelegt und kann an mehreren Stellen angezeigt werden.
-
----
-
-## 4. Datenbankkonzept
-
-Die zentralen Datenbanken werden als eigene Notion-Seiten erstellt. Sie befinden sich in einem Systembereich und funktionieren gewissermassen im Hintergrund.
-
-Auf Dashboards und Projektseiten werden verknüpfte Ansichten dieser Datenbanken eingefügt.
-
-### Vorgesehene Datenbanken
-
-| Datenbank | Zweck |
-|---|---|
-| Projekte | Verwaltung aller Projekte |
-| Aufgaben | Aufgaben, Zuständigkeiten, Prioritäten und Termine |
-| Meilensteine | Wichtige Projektetappen und Zieltermine |
-| Anforderungen | Fachliche und technische Anforderungen |
-| Entscheidungen | Entscheidungen, Alternativen und Begründungen |
-| Probleme & Lösungen | Herausforderungen, Ursachen und Lösungen |
-| Besprechungen | Sitzungen, Notizen und Vereinbarungen |
-| Tests & Feedback | Testfälle, Ergebnisse und Rückmeldungen |
-| Learnings | Erkenntnisse und Verbesserungsvorschläge |
-| Nachweise | Screenshots, Dokumente und Projektergebnisse |
-
----
-
-## 5. Weshalb zentrale Datenbanken verwendet werden
-
-Die zentralen Datenbanken werden jeweils als vollständige Datenbank auf einer eigenen Seite erstellt.
-
-Dieses Vorgehen bietet folgende Vorteile:
-
-- Alle Informationen werden zentral gespeichert.
-- Dieselben Daten können an mehreren Orten angezeigt werden.
-- Daten müssen nicht doppelt erfasst werden.
-- Ansichten können unterschiedlich gefiltert werden.
-- Änderungen werden automatisch in allen Ansichten übernommen.
-- Das System bleibt auch bei vielen Projekten übersichtlich.
-- Projektübergreifende Auswertungen werden möglich.
-- Das System kann später einfacher erweitert werden.
-
-Inline-Datenbanken werden nur für kleine, einmalige Listen verwendet, die ausschliesslich auf einer bestimmten Seite benötigt werden.
-
-Beispiele dafür sind:
-
-- eine kleine Materialliste
-- eine kurze Checkliste
-- einmalige Projektnotizen
-- projektspezifische Informationen ohne weitere Auswertung
-
----
-
-## 6. Seitenstruktur des Notion-Templates
-
-Notion verwendet keine klassischen Ordner wie Windows. Die Struktur wird mit Seiten und Unterseiten aufgebaut.
-
-```text
-PROJECT OS
-│
-├── 01 Dashboard
-│   ├── Meine Aufgaben
-│   ├── Aktive Projekte
-│   ├── Nächste Meilensteine
-│   ├── Offene Probleme
-│   └── Schnellzugriff
-│
-├── 02 Projekte
-│   ├── Alle Projekte
-│   ├── Aktive Projekte
-│   ├── Geplante Projekte
-│   ├── Abgeschlossene Projekte
-│   └── Projektarchiv
-│
-├── 03 Aufgaben
-│   ├── Heute
-│   ├── Diese Woche
-│   ├── Überfällig
-│   ├── Nach Priorität
-│   └── Erledigt
-│
-├── 04 Planung
-│   ├── Meilensteine
-│   ├── Anforderungen
-│   ├── Entscheidungen
-│   └── Projekt-Roadmap
-│
-├── 05 Dokumentation
-│   ├── Besprechungen
-│   ├── Probleme & Lösungen
-│   ├── Tests & Feedback
-│   ├── Learnings
-│   └── Dateien & Nachweise
-│
-├── 06 Portfolio
-│   ├── Präsentierbare Projekte
-│   ├── Projektergebnisse
-│   └── Bewerbungsansicht
-│
-├── 07 Vorlagen
-│   ├── Neue Projektvorlage
-│   ├── Neue Aufgabe
-│   ├── Neue Besprechung
-│   ├── Neuer Testfall
-│   └── Projektabschluss
-│
-└── 99 System
-    ├── Projekte – Datenbank
-    ├── Aufgaben – Datenbank
-    ├── Meilensteine – Datenbank
-    ├── Anforderungen – Datenbank
-    ├── Entscheidungen – Datenbank
-    ├── Probleme – Datenbank
-    ├── Besprechungen – Datenbank
-    ├── Tests & Feedback – Datenbank
-    ├── Learnings – Datenbank
-    └── Nachweise – Datenbank
-
-
---- 
-
-Der Bereich `99 System` ist nicht vollständig unsichtbar. Er wird bewusst am Ende der Seitenstruktur platziert und kann zugeklappt werden. Im täglichen Gebrauch wird hauptsächlich mit den Dashboards und Projektseiten gearbeitet.
-
----
-
-## 7. Zentrales Dashboard
-
-Das Dashboard dient als Startseite des Systems. Es enthält verknüpfte Ansichten der zentralen Datenbanken.
-
-| Dashboard-Bereich | Datenquelle | Filter |
+| Feature | Description | Status |
 |---|---|---|
-| Meine Aufgaben | Aufgaben | Status ist nicht „Erledigt“ |
-| Heute | Aufgaben | Fälligkeitsdatum ist heute |
-| Überfällig | Aufgaben | Datum liegt vor heute und Status ist nicht „Erledigt“ |
-| Aktive Projekte | Projekte | Status ist „Aktiv“ |
-| Nächste Meilensteine | Meilensteine | Datum liegt in den nächsten 30 Tagen |
-| Offene Probleme | Probleme | Status ist nicht „Gelöst“ |
-| Letzte Entscheidungen | Entscheidungen | Sortierung nach Datum, neueste zuerst |
+| Accounts | Register, sign in, sign out | Planned |
+| Projects | Create and edit projects; only members can see a project | Planned |
+| Group members | Add existing accounts to a project | Planned |
+| Kanban board | Tasks with status *To do*, *In progress*, *Done* and a responsible person | Planned |
+| Submission checklist | Customisable checklist of deliverables per project | Planned |
 
-Das Dashboard zeigt dadurch jederzeit den aktuellen Stand aller laufenden Projekte.
+### Later (after validation)
 
----
+Planned-vs-actual timeline, templates for specific schools and project types, notifications and email invitations, teacher view, school licences. These are only prioritised once the survey results and first tests are in.
 
-## 8. Aufbau einer Projektseite
+## Tech stack
 
-Jeder Eintrag in der Projektdatenbank besitzt eine eigene Projektseite.
+| Layer | Technology |
+|---|---|
+| Frontend | Blazor (C# components with HTML/CSS) |
+| Backend | ASP.NET Core |
+| Authentication | ASP.NET Core Identity |
+| Data access | Entity Framework Core |
+| Database | SQLite (local), PostgreSQL (hosted) |
+| IDE | Visual Studio |
+| Hosting | to be decided (see [roadmap](docs/08_roadmap.md)) |
 
-Beispiel:
+## Approach
 
-```text
-SOULHEALINGDIARIES
+The project follows the Swiss **IPERKA** model, complemented by agile elements such as a Kanban board, continuous prioritisation and short retrospectives.
 
-Projektübersicht
-├── Projektziel
-├── Beschreibung
-├── Zielgruppe
-├── Startdatum
-├── Enddatum
-├── Status
-├── Priorität
-└── Fortschritt
+| Phase | Focus | Documentation |
+|---|---|---|
+| **I**nform | Problem, target groups, research | [Project overview](docs/01_project_overview.md), [research](research/) |
+| **P**lan | Requirements, architecture, roadmap | [Requirements](docs/02_requirements.md), [system design](docs/04_system_design.md), [roadmap](docs/08_roadmap.md) |
+| **E**ntscheiden (Decide) | Justified decisions | [Decision records](decisions/README.md) |
+| **R**ealisieren (Implement) | Building the app | [Implementation](docs/05_implementation.md) |
+| **K**ontrollieren (Verify) | Tests with real users | [Testing](docs/06_testing.md) |
+| **A**uswerten (Review) | Results and learnings | [Limitations and learnings](docs/07_limitations_and_learnings.md) |
 
-Projektplanung
-├── Aufgaben
-├── Meilensteine
-├── Anforderungen
-└── Roadmap
+More on the method: [docs/03_methodology.md](docs/03_methodology.md)
 
-Projektdokumentation
-├── Entscheidungen
-├── Probleme & Lösungen
-├── Besprechungen
-├── Tests & Feedback
-└── Dateien & Nachweise
+## Key decisions
 
-Projektabschluss
-├── Projektergebnis
-├── Zielerreichung
-├── Screenshots
-├── Learnings
-├── Retrospektive
-└── Portfolio-Zusammenfassung
-```
+| ADR | Decision | Status |
+|---|---|---|
+| [ADR-001](decisions/ADR-001-notion-as-first-prototype.md) | Build the first prototype as a Notion template | Superseded |
+| [ADR-002](decisions/ADR-002-switch-to-aspnet-core-blazor.md) | Build a dedicated web app with ASP.NET Core and Blazor | Accepted |
 
-Die eingebetteten Datenbankansichten werden jeweils nach dem aktuellen Projekt gefiltert.
+The original Notion concept is kept in the [archive](archive/notion-concept/) to show how the project evolved.
 
-Beispiel:
+## Repository structure
 
 ```text
-Projekt = SoulHealingDiaries
+├── docs/        Project documentation along the IPERKA phases
+├── research/    Platform evaluation, user survey, analysis of school requirements
+├── decisions/   Architecture decision records (ADRs)
+├── archive/     Earlier concepts that were replaced (Notion)
+├── CHANGELOG.md Weekly change log
+└── LICENSE      All rights reserved
 ```
 
-Dadurch zeigt die Projektseite nur die Informationen, die tatsächlich zu diesem Projekt gehören.
+## Working with AI
 
----
+I use Claude (Anthropic) as a coordinator, reviewer and mentor: for planning, research, documentation, and for explanations and code reviews. Changes suggested by Claude are made on separate branches and only reach `main` through a pull request that I review and merge myself. Commits created with Claude's help are marked as co-authored. The application code is written by me, with Claude giving hints and reviews.
 
-## 9. Beziehungen zwischen den Datenbanken
+## Privacy
 
-Die Datenbanken werden über Relations miteinander verbunden.
+Survey and test data are never published in this repository. Only anonymised, aggregated results are documented. Details: [research/03_data_collection_and_privacy.md](research/03_data_collection_and_privacy.md)
 
-```text
-Projekte
-├── Aufgaben
-├── Meilensteine
-├── Anforderungen
-├── Entscheidungen
-├── Probleme
-├── Besprechungen
-├── Tests
-├── Learnings
-└── Nachweise
-```
+## About me
 
-Ein Aufgabeneintrag enthält beispielsweise eine Relation zur Projektdatenbank. Dadurch ist bekannt, zu welchem Projekt die Aufgabe gehört.
+**Sara Chenna** – Founder of FutureTemplates
+Apprentice ICT specialist (Informatikerin EFZ), specialising in platform development.
 
-Rollups können anschliessend Informationen aus verbundenen Datenbanken zusammenfassen, beispielsweise:
+Besides this project, I create and sell Notion productivity templates under FutureTemplates.
 
-- Anzahl aller Aufgaben
-- Anzahl erledigter Aufgaben
-- nächster Meilenstein
-- Anzahl offener Probleme
-- durchschnittlicher Testfortschritt
+- LinkedIn: [linkedin.com/in/sara-chenna](https://www.linkedin.com/in/sara-chenna)
+- Email: chennasara07@gmail.com
 
----
+## Licence
 
-## 10. Auswertungen und Kennzahlen
-
-Das System soll relevante Projektkennzahlen automatisch berechnen.
-
-Geplante Kennzahlen:
-
-- Projektfortschritt in Prozent
-- Anzahl offener Aufgaben
-- Anzahl erledigter Aufgaben
-- Anzahl überfälliger Aufgaben
-- verbleibende Projekttage
-- nächster Meilenstein
-- erreichte Meilensteine
-- offene Probleme
-- bestandene und nicht bestandene Tests
-
-### Beispiel: Fortschritt in Prozent
-
-Voraussetzungen:
-
-- `Aufgaben gesamt` ist ein Rollup.
-- `Erledigte Aufgaben` ist ein Rollup.
-
-```notion
-if(
-  prop("Aufgaben gesamt") == 0,
-  0,
-  round(
-    prop("Erledigte Aufgaben") /
-    prop("Aufgaben gesamt") *
-    100
-  )
-)
-```
-
-### Beispiel: Aufgabenstatus prüfen
-
-```notion
-if(
-  prop("Status") == "Erledigt",
-  "Abgeschlossen",
-  if(
-    prop("Fällig") < now(),
-    "Überfällig",
-    "Offen"
-  )
-)
-```
-
-### Beispiel: Verbleibende Projekttage
-
-```notion
-if(
-  empty(prop("Enddatum")),
-  0,
-  dateBetween(prop("Enddatum"), now(), "days")
-)
-```
-
-Die Formeln müssen an die verwendeten Eigenschaftsnamen und Datentypen angepasst werden.
-
----
-
-## 11. Automatisierungen und externe Skripte
-
-Einfache Berechnungen können direkt mit Notion-Formeln, Relations und Rollups umgesetzt werden.
-
-Für komplexere Funktionen können später folgende Werkzeuge eingesetzt werden:
-
-- Notion Automations
-- Notion API
-- JavaScript
-- Python
-- Make
-- Zapier
-- n8n
-
-Mögliche Automatisierungen:
-
-- automatische Erstellung von Standardaufgaben bei einem neuen Projekt
-- Erinnerungen vor einem Meilenstein
-- automatische Aktualisierung von Statusfeldern
-- Auswertung des Projektfortschritts
-- Erstellung regelmässiger Projektberichte
-- Übertragung von Daten in externe Analysewerkzeuge
-- Archivierung abgeschlossener Projekte
-- Erkennung überfälliger Aufgaben
-
-Code wird nicht direkt innerhalb einer normalen Notion-Seite ausgeführt. Codeschnipsel können dort dokumentiert werden. Für die tatsächliche Ausführung wird beispielsweise ein externes Skript benötigt, das über die Notion API auf die Datenbanken zugreift.
-
----
-
-## 12. Dokumentation für Bewerbungen
-
-Das Projektmanagement-System soll später ebenfalls als Nachweis der persönlichen Arbeitsweise dienen.
-
-Für präsentierbare Projekte werden deshalb folgende Informationen dokumentiert:
-
-- Ausgangslage und Problem
-- Projektziel
-- eigene Rolle
-- Anforderungen
-- Planung und Vorgehen
-- eingesetzte Methoden
-- wichtige Entscheidungen
-- aufgetretene Probleme
-- entwickelte Lösungen
-- Tests und Resultate
-- Projektergebnis
-- persönliche Learnings
-- Screenshots und weitere Nachweise
-
-Dadurch kann später gezeigt werden:
-
-> So plane, strukturiere, dokumentiere und verbessere ich ein Projekt.
-
-Vertrauliche Informationen, Zugangsdaten sowie interne Daten von Unternehmen oder Kunden dürfen nicht öffentlich dokumentiert werden.
-
----
-
-## 13. Geplante Umsetzung
-
-Das System wird schrittweise aufgebaut.
-
-### Phase 1: Grundsystem
-
-- Seitenstruktur erstellen
-- Projektdatenbank erstellen
-- Aufgabendatenbank erstellen
-- Beziehungen zwischen Projekten und Aufgaben einrichten
-- zentrales Dashboard erstellen
-
-### Phase 2: Projektplanung
-
-- Meilensteine ergänzen
-- Anforderungen dokumentieren
-- Entscheidungsdatenbank erstellen
-- Roadmap entwickeln
-
-### Phase 3: Dokumentation
-
-- Probleme und Lösungen erfassen
-- Besprechungen dokumentieren
-- Tests und Feedback ergänzen
-- Learnings festhalten
-- Nachweise sammeln
-
-### Phase 4: Auswertungen
-
-- Rollups einrichten
-- Fortschritt berechnen
-- überfällige Aufgaben erkennen
-- Projektkennzahlen darstellen
-- Dashboard optimieren
-
-### Phase 5: Vorlagen und Automatisierung
-
-- Projektvorlage erstellen
-- Aufgabenvorlage erstellen
-- Testfallvorlage erstellen
-- Projektabschluss-Vorlage erstellen
-- sinnvolle Automatisierungen ergänzen
-
-### Phase 6: Portfolio-Ansicht
-
-- präsentierbare Projekte auswählen
-- vertrauliche Inhalte ausblenden
-- Ergebnisse und Learnings zusammenfassen
-- Bewerbungsansicht erstellen
-
----
-
-## 14. Erwartetes Ergebnis
-
-Am Ende soll ein übersichtliches, erweiterbares und benutzerfreundliches Projektmanagement-System entstehen.
-
-Das System soll:
-
-- verschiedene Projektarten unterstützen
-- alle Projektdaten zentral speichern
-- eine übersichtliche Arbeitsoberfläche bieten
-- den Projektfortschritt automatisch auswerten
-- Entscheidungen und Entwicklungen nachvollziehbar machen
-- Probleme, Lösungen und Learnings dokumentieren
-- als persönlicher Arbeitsnachweis verwendet werden können
-- später um weitere Funktionen erweitert werden können
+© 2026 Sara Chenna. All rights reserved. The code and documentation may be viewed on GitHub but may not be copied, modified, distributed or used commercially without written permission. See [LICENSE](LICENSE).

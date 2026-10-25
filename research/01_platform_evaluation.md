@@ -1,393 +1,139 @@
-# Plattformevaluation für die Produktentwicklung
+# Platform Evaluation
 
-## Dokumentstatus
-
-| Angabe | Wert |
+| | |
 |---|---|
-| Bestandteil der IPERKA-Phase | Informieren |
+| IPERKA phase | Inform |
 | Status | Completed |
-| Stand der Recherche | 26. September 2026 |
-| Verantwortliche Person | Sara Chenna |
-| Entscheidungsgegenstand | Plattform für den ersten funktionsfähigen Prototyp |
-| Ausgewählte Plattform | Notion |
+| Research date | 26 September 2026 |
+| Owner | Sara Chenna |
+| Decision subject | Platform for the first working prototype |
+| Result at the time | Notion ([ADR-001](../decisions/ADR-001-notion-as-first-prototype.md)) |
 
-> Diese Evaluation untersucht, auf welcher Plattform das geplante
-> Projektmanagement-System entwickelt werden soll.
+> **Note (24 October 2026):** This decision was revised. The project is now built as a web app with ASP.NET Core and Blazor – see [ADR-002](../decisions/ADR-002-switch-to-aspnet-core-blazor.md). This evaluation is kept unchanged as part of the decision history.
 
-## 1. Entscheidungsbedarf
+## 1. Question
 
-Die Ausgangslage, Zielgruppen, Anforderungen und der vorgesehene Funktionsumfang sind in [`01_project_overview.md`](01_project_overview.md) dokumentiert.
+> Which platform is best suited to build and test an understandable, adaptable and sellable project management system for school and study projects with reasonable effort?
 
-Für den Übergang von der Informations- in die Planungsphase muss festgelegt werden, auf welcher technischen Grundlage der erste funktionsfähige Prototyp umgesetzt wird. Diese Evaluation dokumentiert ausschliesslich diese Plattformentscheidung.
+The decision concerned the first working prototype, not necessarily the long-term technical solution.
 
-## 2. Ziel der Evaluation
+## 2. Options
 
-Die Evaluation soll folgende Frage beantworten:
-
-> Welche Plattform eignet sich am besten, um mit vertretbarem Aufwand ein
-> verständliches, anpassbares und verkaufbares Projektmanagement-System für
-> schulische und studentische Projekte zu entwickeln und zu testen?
-
-Die Entscheidung bezieht sich auf den ersten funktionsfähigen Prototyp und
-
-nicht zwingend auf die langfristige technische Endlösung.
-
-## 3. Untersuchte Optionen
-
-| Option | Art der Lösung | Grund für die Aufnahme |
+| Option | Type | Reason for inclusion |
 |---|---|---|
-| Notion | No-Code-Workspace und Template-Plattform | Aktuell vorgesehene Entwicklungsumgebung und grosse Gestaltungsfreiheit für Vorlagen |
-| Coda | Dokumentenbasierte No-Code-Plattform | Verbindet Dokumente, Tabellen, Formeln, Buttons und Automatisierungen |
-| Airtable | No-Code-Datenbank und App-Plattform | Starke relationale Datenstrukturen, Ansichten, Interfaces und Automatisierungen |
-| Microsoft Power Apps | Low-Code-App-Plattform | Interessant für Schulen mit Microsoft-365-Umgebung |
-| eigene Webanwendung | individuell programmierte Anwendung | Maximale Kontrolle über Funktionen, Benutzeroberfläche und Geschäftsmodell |
+| Notion | No-code workspace and template platform | Planned development environment at the time; high design freedom for templates |
+| Coda | Document-based no-code platform | Combines documents, tables, formulas, buttons and automations |
+| Airtable | No-code database and app platform | Strong relational data, views, interfaces and automations |
+| Microsoft Power Apps | Low-code app platform | Relevant for schools using Microsoft 365 |
+| Custom web app | Individually developed application | Full control over features, UI and business model |
 
-## 4. Ausschluss anderer Projektmanagement-Produkte
+Ready-made project management products (Trello, Asana, Microsoft Planner, ClickUp) were not part of this evaluation because they cannot be turned into an own product.
 
-Trello, Asana, Microsoft Planner und ClickUp sind fertige Projektmanagement-Produkte und werden in der separaten [`01_competitor_analysis.md`](01_competitor_analysis.md) betrachtet.
+## 3. Scoring
 
-## 5. Bewertungssystem
-
-Jede Plattform wird anhand einer Skala von 1 bis 5 bewertet.
-
-| Bewertung | Bedeutung |
-|---:|---|
-| 1 | sehr schlecht geeignet |
-| 2 | eher schlecht geeignet |
-| 3 | teilweise geeignet |
-| 4 | gut geeignet |
-| 5 | sehr gut geeignet |
-
-Die gewichtete Punktzahl wird wie folgt berechnet:
+Each platform was rated from 1 (very poorly suited) to 5 (very well suited).
 
 ```text
-
-Gewichtete Punktzahl = Bewertung / 5 × Gewichtung
-
+Weighted score = rating / 5 × weight
 ```
 
-Die maximal erreichbare Gesamtpunktzahl beträgt 100 Punkte.
+Maximum total: 100 points.
 
-## 6. Bewertungskriterien
+## 4. Criteria
 
-| ID | Kriterium | Gewichtung | Begründung |
+| ID | Criterion | Weight | Rationale |
 |---|---|---:|---|
-| `PLAT-001` | Benutzerfreundlichkeit für die Zielgruppe | 10 % | Das Produkt soll ohne lange Einarbeitung verwendbar sein. |
-| `PLAT-002` | Verteilung und Verkauf des Produkts | 10 % | Das Produkt soll einfach an Nutzerinnen und Nutzer übergeben werden können. |
-| `PLAT-003` | kostenlose Grundnutzung | 10 % | Die Zielgruppe soll kein Pflichtabonnement benötigen. |
-| `PLAT-004` | Dokumentation und Inhalte | 10 % | Projektwissen, Vorlagen und Learnings sollen zentral abgelegt werden. |
-| `PLAT-005` | Datenmodell | 10 % | Projekte, Aufgaben, Personen und Meilensteine müssen verknüpft werden können. |
-| `PLAT-006` | Formeln und Automatisierungen | 10 % | Fortschritt, Taskpoints und wiederkehrende Abläufe sollen unterstützt werden. |
-| `PLAT-007` | Gestaltungsfreiheit | 10 % | Benutzeroberfläche und Projektablauf sollen zielgruppengerecht aufgebaut werden. |
-| `PLAT-008` | Zusammenarbeit | 5 % | Kleine Projektgruppen sollen gemeinsam arbeiten können. |
-| `PLAT-009` | mobile Nutzbarkeit | 5 % | Wichtige Informationen sollen über ein Smartphone erreichbar sein. |
-| `PLAT-010` | Entwicklungs- und Wartungsaufwand | 15 % | Die erste Version wird von einer Person entwickelt und gepflegt. |
-| `PLAT-011` | Betriebs- und Rechtsaufwand | 5 % | Hosting, Konten, Sicherheit und Datenverarbeitung sollen beherrschbar bleiben. |
-|  | **Gesamt** | **100 %** |  |
+| `PLAT-001` | Ease of use for the target group | 10 % | Usable without long onboarding |
+| `PLAT-002` | Distribution and sales | 10 % | Easy to hand over to users |
+| `PLAT-003` | Free basic use | 10 % | No mandatory subscription for students |
+| `PLAT-004` | Documentation and content | 10 % | Knowledge, templates and learnings in one place |
+| `PLAT-005` | Data model | 10 % | Link projects, tasks, people and milestones |
+| `PLAT-006` | Formulas and automation | 10 % | Progress, task points, recurring processes |
+| `PLAT-007` | Design freedom | 10 % | UI and process tailored to the target group |
+| `PLAT-008` | Collaboration | 5 % | Small groups can work together |
+| `PLAT-009` | Mobile use | 5 % | Key information on a smartphone |
+| `PLAT-010` | Development and maintenance effort | 15 % | Built and maintained by one person |
+| `PLAT-011` | Operations and legal effort | 5 % | Hosting, accounts, security, data processing |
+| | **Total** | **100 %** | |
 
-## 7. Nutzwertanalyse
+## 5. Ratings
 
-### 7.1 Bewertungen
-
-| Kriterium | Gewichtung | Notion | Coda | Airtable | Power Apps | eigene Webanwendung |
+| Criterion | Weight | Notion | Coda | Airtable | Power Apps | Custom web app |
 |---|---:|---:|---:|---:|---:|---:|
-| Benutzerfreundlichkeit für die Zielgruppe | 10 % | 5 | 3 | 3 | 2 | 5 |
-| Verteilung und Verkauf des Produkts | 10 % | 5 | 4 | 3 | 2 | 5 |
-| kostenlose Grundnutzung | 10 % | 5 | 3 | 4 | 2 | 2 |
-| Dokumentation und Inhalte | 10 % | 5 | 5 | 2 | 3 | 5 |
-| Datenmodell | 10 % | 4 | 5 | 5 | 5 | 5 |
-| Formeln und Automatisierungen | 10 % | 3 | 5 | 4 | 5 | 5 |
-| Gestaltungsfreiheit | 10 % | 3 | 4 | 4 | 5 | 5 |
-| Zusammenarbeit | 5 % | 4 | 4 | 4 | 4 | 5 |
-| mobile Nutzbarkeit | 5 % | 4 | 4 | 4 | 4 | 4 |
-| Entwicklungs- und Wartungsaufwand | 15 % | 5 | 4 | 3 | 2 | 1 |
-| Betriebs- und Rechtsaufwand | 5 % | 4 | 4 | 4 | 2 | 1 |
+| Ease of use | 10 % | 5 | 3 | 3 | 2 | 5 |
+| Distribution and sales | 10 % | 5 | 4 | 3 | 2 | 5 |
+| Free basic use | 10 % | 5 | 3 | 4 | 2 | 2 |
+| Documentation and content | 10 % | 5 | 5 | 2 | 3 | 5 |
+| Data model | 10 % | 4 | 5 | 5 | 5 | 5 |
+| Formulas and automation | 10 % | 3 | 5 | 4 | 5 | 5 |
+| Design freedom | 10 % | 3 | 4 | 4 | 5 | 5 |
+| Collaboration | 5 % | 4 | 4 | 4 | 4 | 5 |
+| Mobile use | 5 % | 4 | 4 | 4 | 4 | 4 |
+| Development and maintenance effort | 15 % | 5 | 4 | 3 | 2 | 1 |
+| Operations and legal effort | 5 % | 4 | 4 | 4 | 2 | 1 |
 
-### 7.2 Gewichtete Ergebnisse
+## 6. Results
 
-| Rang | Plattform | Punktzahl | Ergebnis |
+| Rank | Platform | Score | Assessment |
 |---:|---|---:|---|
-| 1 | Notion | **87/100** | sehr gut geeignet |
-| 2 | Coda | **82/100** | gut bis sehr gut geeignet |
-| 3 | eigene Webanwendung | **77/100** | langfristig interessant, aktuell zu aufwendig |
-| 4 | Airtable | **71/100** | technisch geeignet, aber weniger dokumentenorientiert |
-| 5 | Microsoft Power Apps | **64/100** | für institutionelle Microsoft-Umgebungen geeignet |
+| 1 | Notion | **87/100** | Very well suited |
+| 2 | Coda | **82/100** | Well to very well suited |
+| 3 | Custom web app | **77/100** | Interesting long-term, too much effort at the time |
+| 4 | Airtable | **71/100** | Technically suitable, less document-oriented |
+| 5 | Microsoft Power Apps | **64/100** | Suited to institutional Microsoft environments |
 
-Die Bewertungen stellen eine begründete Projekteinschätzung dar. Sie müssen
+## 7. Summary per option
 
-durch einen kleinen praktischen Test der wichtigsten Annahmen ergänzt werden.
+**Notion** – Pages and databases in one system, many views, formulas, relations and rollups, templates can be duplicated and sold. Limits: no editable automations on the free plan, guest and file limits, one native chart, no own user management, no central updates for duplicated templates.
 
-## 8. Einzelbewertung
+**Coda** – Strong formulas and automations, app-like documents. Limits: free shared documents limited to 50 objects and 1,000 rows, less known among students.
 
-### 8.1 Notion
+**Airtable** – Powerful relational data and interfaces. Limits: less suited to long-form documentation, free-plan limits on automations and records.
 
-#### Geeignete Eigenschaften
+**Microsoft Power Apps** – Highly customisable, integrates with Microsoft 365. Limits: licensing depends on the school's plans, premium connectors cost extra, often requires IT administration.
 
-- Seiten und Datenbanken können innerhalb eines Systems kombiniert werden.
-- Tabellen-, Board-, Kalender-, Galerie- und Timeline-Ansichten unterstützen unterschiedliche Arbeitsweisen.
-- Formeln, Relationen und Rollups ermöglichen verknüpfte Projektdaten.
-- Datenbankvorlagen können für wiederkehrende Projektstrukturen verwendet werden.
-- Formulare können mit Datenbanken verbunden werden.
-- Templates können in andere Workspaces dupliziert und über den Marketplace angeboten werden.
-- Web-, Desktop- und Mobile-Anwendungen sind verfügbar.
-- Inhalte können als PDF, CSV oder HTML exportiert werden.
+**Custom web app** – Full control over UI, accounts, roles, automations and business model; central updates for all users. Limits: high effort for one person; hosting, security, backups and privacy must be handled in-house.
 
-#### Einschränkungen
+## 8. Defined triggers for re-evaluation
 
-- Erweiterte Datenbankautomatisierungen sind im Free-Tarif nicht frei bearbeitbar.
-- Gemeinsame Free-Workspaces besitzen Einschränkungen bei Mitgliedern und Blöcken.
-- Die Anzahl der Gäste ist im Free-Tarif begrenzt.
-- Dateien im Free-Tarif besitzen eine Grössenbegrenzung.
-- Nur ein natives Diagramm kann im Free-Tarif kostenlos genutzt werden.
-- Die Benutzeroberfläche kann nicht vollständig frei programmiert werden.
-- Änderungen an der Originalvorlage werden nicht automatisch auf alle bereits duplizierten Kopien übertragen.
+A custom web app was to be re-evaluated if, among others:
 
-#### Bewertung
+- several schools show concrete interest
+- users need central account management
+- multi-level roles and permissions become necessary
+- updates must reach all customers at the same time
+- Notion's automation is not sufficient for core processes
+- tests show that Notion's UI significantly hinders the target group
 
-Notion eignet sich besonders gut für den ersten Prototyp, weil das Produkt aus
+Two of these triggers – central account management and roles/permissions – became relevant when planning group collaboration in detail. This led to [ADR-002](../decisions/ADR-002-switch-to-aspnet-core-blazor.md).
 
-Projektmanagement, Vorlagen und Dokumentation besteht. Ein grosser Teil der
+## 9. Reflection
 
-gewünschten Funktionen kann ohne klassische Softwareentwicklung umgesetzt und
+The evaluation weighted development effort highest (15 %) and collaboration low (5 %). In hindsight, collaboration is the core need of group projects and should have been weighted higher. With collaboration and design freedom weighted more strongly, the custom web app would have ranked closer to the top. See [learnings](../docs/07_limitations_and_learnings.md).
 
-mit Testpersonen früh überprüft werden.
+## 10. Sources
 
-### 8.2 Coda
+**Notion**
+- [Notion pricing](https://www.notion.com/pricing)
+- [Database automations](https://www.notion.com/help/database-automations)
+- [Database templates](https://www.notion.com/help/database-templates)
+- [Forms](https://www.notion.com/help/forms)
+- [Notion for education](https://www.notion.com/help/notion-for-education)
 
-#### Geeignete Eigenschaften
+**Coda**
+- [Coda pricing](https://coda.io/pricing)
+- [Billing and Doc Makers](https://help.coda.io/hc/en-us/articles/39555725230989-Billing-and-pricing-basics)
+- [Doc limits](https://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits)
+- [Automations](https://help.coda.io/hc/en-us/articles/39555778179853-Automations-in-Coda)
 
-- kombiniert Dokumente mit Tabellen, Ansichten, Formeln und Buttons
-- unterstützt umfangreiche Formeln und Automatisierungen
-- ermöglicht appähnliche Dokumente
-- bietet eine Vorlagengalerie
-- verwendet ein Maker-Modell, bei dem in bezahlten Workspaces nur Doc Makers bezahlt werden
-- Editoren und Betrachtende können in bezahlten Workspaces kostenlos mitarbeiten
+**Airtable**
+- [Airtable pricing](https://airtable.com/pricing)
+- [Plan overview](https://support.airtable.com/docs/airtable-plans)
+- [Automations](https://support.airtable.com/docs/getting-started-with-airtable-automations)
+- [Sharing interfaces](https://support.airtable.com/docs/managing-and-sharing-interfaces)
 
-#### Einschränkungen
-
-- geteilte Dokumente im Free-Tarif sind auf 50 Objekte begrenzt
-- geteilte Free-Dokumente sind auf 1'000 Tabellenzeilen begrenzt
-- für die Zielgruppe weniger bekannt als Notion
-- höhere Einarbeitungszeit bei komplexen Formeln und Automatisierungen
-- Vertrieb und Vermarktung von Vorlagen besitzen eine kleinere Reichweite als im Notion-Ökosystem
-
-#### Bewertung
-
-Coda ist technisch eine starke Alternative und übertrifft Notion bei einigen
-
-Automatisierungs- und Formelfunktionen. Die Grenzen geteilter kostenloser
-
-Dokumente sind für ein wachsendes Projektmanagement-System jedoch relevant.
-
-Die geringere Bekanntheit bei der Zielgruppe erhöht ausserdem den
-
-Erklärungsaufwand.
-
-### 8.3 Airtable
-
-#### Geeignete Eigenschaften
-
-- leistungsfähige relationale Datenbanken
-- verschiedene Ansichten und Interfaces
-- Formulare und Automatisierungen
-- geeignet für strukturierte Daten und umfangreiche Auswertungen
-- kostenloser Tarif für Einzelpersonen und sehr kleine Teams
-- zeitlich begrenzte kostenlose Team-Angebote für berechtigte Studierende
-
-#### Einschränkungen
-
-- Dokumentation und längere Projektinhalte stehen weniger im Mittelpunkt
-- die Bedienung wirkt stärker datenbank- als dokumentenorientiert
-- Interfaces im Free-Tarif können nur mit verifizierten Airtable-Konten geteilt werden
-- einzelne Automatisierungen, Datensätze und Erweiterungen besitzen Tariflimits
-- für ein vollständiges Lern- und Projektsystem wären zusätzliche Erklärungen oder externe Dokumente erforderlich
-
-#### Bewertung
-
-Airtable eignet sich gut für das Datenmodell und strukturierte Auswertungen.
-
-Für ein Produkt, das zusätzlich Vorlagen, Anleitungen, Projektdokumentation und
-
-Learnings enthalten soll, ist Notion jedoch besser auf den geplanten
-
-Gesamtzweck abgestimmt.
-
-### 8.4 Microsoft Power Apps
-
-#### Geeignete Eigenschaften
-
-- weitgehend frei gestaltbare Low-Code-Anwendungen
-- Anbindung an Microsoft 365, SharePoint, Teams und weitere Datenquellen
-- umfangreiche Automatisierungen über Power Automate
-- Benutzer- und Rechteverwaltung innerhalb einer Microsoft-Organisation
-- interessant für Schulen mit einer zentral verwalteten Microsoft-Umgebung
-
-#### Einschränkungen
-
-- Lizenzierung hängt von Microsoft-365- und Power-Platform-Plänen ab
-- Microsoft-365-Lizenzen enthalten nur eingeschränkte Power-Apps- und Power-Automate-Rechte
-- Premium-Connectors und erweiterte Funktionen benötigen zusätzliche Lizenzen
-- Einrichtung kann Unterstützung durch die IT-Administration der Schule erfordern
-- Verkauf als einfach duplizierbares Produkt an Einzelpersonen ist schwieriger
-- höherer Entwicklungs-, Test- und Supportaufwand
-
-#### Bewertung
-
-Power Apps ist interessant, wenn später eine konkrete Schule eine interne
-
-Anwendung innerhalb ihrer Microsoft-Umgebung benötigt. Für ein allgemein
-
-verkaufbares Produkt an einzelne Schülerinnen, Schüler und Studierende ist die
-
-Lizenz- und Administrationsabhängigkeit aktuell zu gross.
-
-### 8.5 Eigene Webanwendung
-
-#### Geeignete Eigenschaften
-
-- vollständige Kontrolle über Benutzeroberfläche und Benutzerführung
-- eigene Benutzerkonten und Berechtigungsmodelle
-- frei programmierbare Automatisierungen und Benachrichtigungen
-- zentrale Aktualisierung für alle Nutzerinnen und Nutzer
-- eigene Preis-, Lizenz- und Abonnementmodelle
-- bessere langfristige Skalierbarkeit bei nachgewiesener Nachfrage
-- keine Abhängigkeit von den Funktionsgrenzen einer No-Code-Plattform
-
-#### Einschränkungen
-
-- hoher Entwicklungsaufwand für eine Einzelperson
-- Hosting, Datenbank, Authentifizierung und Backups müssen betrieben werden
-- Sicherheitsupdates und Fehlerbehebungen müssen dauerhaft gewährleistet werden
-- höhere Anforderungen an Datenschutz und technische Dokumentation
-- zusätzliche Verantwortung für personenbezogene Daten
-- Web- und Mobile-Oberflächen müssen selbst entwickelt und getestet werden
-- Support und Betrieb verursachen wiederkehrende Kosten
-- ein vollständiger Prototyp wäre deutlich später testbar
-
-#### Bewertung
-
-Eine eigene Webanwendung ist langfristig die flexibelste Option. Für die
-
-aktuelle Projektphase wäre sie jedoch unverhältnismässig aufwendig. Zuerst
-
-soll mit einem Notion-Prototyp geprüft werden, ob die Zielgruppe das Produkt
-
-tatsächlich benötigt und welche Funktionen im Alltag verwendet werden.
-
-## 9. Entscheidung
-
-### 9.1 Ausgewählte Plattform
-
-Der erste funktionsfähige Prototyp wird in **Notion** entwickelt.
-
-**Entscheidungsstatus:** Accepted for MVP
-
-### 9.2 Begründung
-
-Notion wurde ausgewählt, weil:
-
-1. die geplante Lösung Aufgabenverwaltung und Projektdokumentation verbindet
-2. ein funktionsfähiger Prototyp mit überschaubarem Aufwand erstellt werden kann
-3. das Produkt als duplizierbares Template verteilt und verkauft werden kann
-4. die Zielgruppe kein zwingendes kostenpflichtiges Abonnement benötigt
-5. Datenbanken, Relationen, Rollups und Formeln für die Kernfunktionen ausreichen
-6. Vorlagen und Anleitungen direkt in das Produkt integriert werden können
-7. Desktop- und Mobile-Anwendungen bereits vorhanden sind
-8. Nutzerfeedback früh eingeholt werden kann, bevor hohe Entwicklungskosten entstehen
-
-Notion besitzt nicht in jedem Kriterium die stärksten Funktionen. Die Plattform
-
-bietet jedoch das beste Verhältnis zwischen Funktionsumfang, Entwicklungszeit,
-
-Zugänglichkeit und Portfolio-Nutzen für die erste Version.
-
-## 10. Bedingungen für eine spätere Neubeurteilung
-
-Eine eigene Webanwendung wird erst geprüft, wenn der Notion-Prototyp klare Grenzen erreicht oder eine nachweisbare Nachfrage besteht.
-
-Mögliche Auslöser sind:
-
-- mehrere Schulen zeigen konkretes Kaufinteresse
-- Nutzerinnen und Nutzer benötigen eine zentrale Kontenverwaltung
-- mehrstufige Rollen und Berechtigungen werden zwingend erforderlich
-- automatische Aktualisierungen müssen für alle Kundinnen und Kunden gleichzeitig erfolgen
-- Notion-Automatisierungen reichen für zentrale Abläufe nicht mehr aus
-- umfangreiche Benachrichtigungen werden benötigt
-- das Produkt erreicht regelmässige Einnahmen, die Entwicklung und Betrieb finanzieren können
-- Tests zeigen, dass die Notion-Bedienung die Zielgruppe wesentlich behindert
-
-Das Erreichen eines einzelnen Auslösers führt noch nicht automatisch zur Neuentwicklung. Vorher ist eine separate Wirtschaftlichkeits- und Risikoanalyse erforderlich.
-
-## 11. Auswirkungen auf die Planung
-
-Durch die Plattformentscheidung gelten für die Planungsphase folgende Vorgaben:
-
-- Die Informationsarchitektur wird innerhalb der Möglichkeiten von Notion geplant.
-- Kernfunktionen müssen im kostenlosen Notion-Tarif nutzbar sein.
-- kostenpflichtige Funktionen werden nur als optionale Erweiterungen behandelt.
-- das System wird für Einzelpersonen und kleine Projektgruppen optimiert.
-- die Anzahl der Seiten, Datenbanken und Eigenschaften wird bewusst begrenzt.
-- mobile Ansichten werden von Beginn an berücksichtigt.
-- Automatisierungen erhalten immer eine manuelle Alternative.
-- vertrauliche Daten werden nicht für die Funktionsfähigkeit vorausgesetzt.
-- technische Grenzen werden transparent dokumentiert.
-- Anforderungen an eine spätere Webanwendung werden nicht in den MVP-Umfang aufgenommen.
-
-## 12. Risiken der Entscheidung
-
-| ID | Risiko | Auswirkung | Gegenmassnahme |
-|---|---|---|---|
-| `PLAT-RISK-001` | Notion ändert Funktionen oder Tarife. | Teile des Templates funktionieren nicht mehr wie dokumentiert. | Kernfunktionen regelmässig im Free-Tarif testen. |
-| `PLAT-RISK-002` | Das Template wird zu komplex. | Die Zielgruppe benötigt trotz Vorlage eine lange Einarbeitung. | Funktionsumfang priorisieren und mit Testpersonen prüfen. |
-| `PLAT-RISK-003` | Bereits duplizierte Templates erhalten keine zentralen Aktualisierungen. | Kundinnen und Kunden verwenden unterschiedliche Versionen. | Versions- und Update-Konzept entwickeln. |
-| `PLAT-RISK-004` | Zusammenarbeit im Free-Tarif reicht nicht aus. | Grössere Gruppen können das Template nur eingeschränkt verwenden. | Zielgruppe begrenzen und Gastmodell dokumentieren. |
-| `PLAT-RISK-005` | Benötigte Automatisierungen sind kostenpflichtig. | Kernabläufe funktionieren nicht für alle Nutzenden. | Manuelle oder buttonbasierte Alternativen einplanen. |
-| `PLAT-RISK-006` | Eine Schule verlangt zentrale Administration. | Das Produkt kann institutionelle Anforderungen nicht erfüllen. | Schulversion später separat evaluieren. |
-| `PLAT-RISK-007` | Die Zielgruppe bevorzugt bereits vorhandene Plattformen. | Geringe Nachfrage nach dem Template. | Nutzen und Nachfrage vor grosser Umsetzung testen. |
-
-## 13. Abschlusskriterien der Plattformevaluation
-
-Die Plattformevaluation gilt als abgeschlossen, weil:
-
-- der Zweck der Plattform festgelegt wurde
-- geeignete Plattformtypen identifiziert wurden
-- ein gewichtetes Bewertungssystem angewendet wurde
-- die fünf Optionen nachvollziehbar verglichen wurden
-- technische und organisatorische Grenzen dokumentiert wurden
-- eine Plattform für den ersten Prototyp ausgewählt wurde
-- eine spätere Neubeurteilung anhand konkreter Auslöser vorgesehen ist
-
-Damit ist die Plattformfrage für den ersten Prototyp ausreichend geklärt und
-
-die Planung des Notion-Systems kann beginnen.
-
-## 14. Quellen
-
-### Notion
-
-- [Notion – Tarife](https\://www\.notion.com/pricing)
-- [Notion – Datenbankautomatisierungen](https\://www\.notion.com/help/database-automations)
-- [Notion – Datenbankvorlagen](https\://www\.notion.com/help/database-templates)
-- [Notion – Formulare](https\://www\.notion.com/help/forms)
-- [Notion für Bildung](https\://www\.notion.com/help/notion-for-education)
-
-### Coda
-
-- [Coda – Tarife](https\://coda.io/pricing)
-- [Coda – Abrechnung und Doc Makers](https\://help.coda.io/hc/en-us/articles/39555725230989-Billing-and-pricing-basics)
-- [Coda – Dokumentlimits](https\://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits)
-- [Coda – Automatisierungen](https\://help.coda.io/hc/en-us/articles/39555778179853-Automations-in-Coda)
-
-### Airtable
-
-- [Airtable – Tarife](https\://airtable.com/pricing)
-- [Airtable – Tarifübersicht](https\://support.airtable.com/docs/airtable-plans)
-- [Airtable – Automatisierungen](https\://support.airtable.com/docs/getting-started-with-airtable-automations)
-- [Airtable – Interfaces teilen](https\://support.airtable.com/docs/managing-and-sharing-interfaces)
-
-### Microsoft Power Apps
-
-- [Microsoft – Power Platform Lizenzübersicht](https\://learn.microsoft.com/en-us/power-platform/admin/pricing-billing-skus)
-- [Microsoft – Power Apps Dokumentation](https\://learn.microsoft.com/en-us/power-apps/)
-- [Microsoft – Power Apps für Bildung](https\://learn.microsoft.com/en-us/microsoft-365/education/guide/1-addons/addons-powerapps)
-- [Microsoft – Microsoft 365 Education](https\://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
+**Microsoft Power Apps**
+- [Power Platform licensing](https://learn.microsoft.com/en-us/power-platform/admin/pricing-billing-skus)
+- [Power Apps documentation](https://learn.microsoft.com/en-us/power-apps/)
+- [Power Apps for education](https://learn.microsoft.com/en-us/microsoft-365/education/guide/1-addons/addons-powerapps)
+- [Microsoft 365 Education](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
