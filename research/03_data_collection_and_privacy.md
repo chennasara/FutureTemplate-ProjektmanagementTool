@@ -53,7 +53,7 @@ Answers with an email address count as personal data and are protected according
 | Raw data location | Microsoft Forms / associated Microsoft 365 account; exports in a protected OneDrive folder |
 | Access | Sara Chenna only |
 | Deletion | At the latest 12 months after evaluation; email addresses after the test phase or on withdrawal |
-| Consent information | Yes – participation and privacy notes at the start of the survey; separate purpose note for the optional email address |
+| Consent information | Yes, participation and privacy notes at the start of the survey; separate purpose note for the optional email address |
 | Publication | Only anonymised, aggregated results; no raw data or email addresses |
 
 ## 5. Processing and publication

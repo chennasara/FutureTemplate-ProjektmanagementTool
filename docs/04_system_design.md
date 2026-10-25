@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | IPERKA phase | Plan |
-| Status | Draft – will be detailed in week 2 |
+| Status | Draft, will be detailed in week 2 |
 
 ## Architecture
 
@@ -24,7 +24,7 @@ Database (SQLite / PostgreSQL)  ← where data is stored permanently
 ASP.NET Core Identity           ← accounts, passwords, sign-in
 ```
 
-**Why this structure:** the UI never talks to the database directly. All rules – especially "only members may see a project" – live in one place, the services, and cannot be bypassed from the UI.
+**Why this structure:** the UI never talks to the database directly. All rules, especially "only members may see a project", live in one place, the services, and cannot be bypassed from the UI.
 
 ## Data model (first draft)
 
