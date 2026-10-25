@@ -55,7 +55,7 @@ Privacy details: [03_data_collection_and_privacy.md](03_data_collection_and_priv
 | Own ICT class | BBZ Schaffhausen | Survey | Responses received |
 | Teacher with access to other classes | BBZ Schaffhausen | Multiplier | To contact |
 | Office responsible for surveys | Kantonsschule Schaffhausen | Reach Gymnasium / FMS students | To contact |
-| Office responsible for surveys | HKV Schaffhausen | Reach commercial apprentices | To contact |
+| General contact (all departments) | HKV Schaffhausen | Reach commercial, retail, HMS and HFW students | Sent 25 October 2026 |
 | Student organisation | Kantonsschule Schaffhausen | Further distribution | Planned |
 
 | | |
