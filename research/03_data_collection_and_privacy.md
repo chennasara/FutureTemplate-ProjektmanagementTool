@@ -1,65 +1,77 @@
-# Datenerhebung und Datenschutz
+# Data Collection and Privacy
 
-Für die Anforderungsanalyse und die spätere Überprüfung des Prototyps werden nur Daten erhoben, die für den jeweiligen Zweck erforderlich sind. Die Daten aus der Zielgruppenbefragung und den späteren Produkttests werden getrennt ausgewertet.
+Only data needed for the respective purpose is collected for the requirements analysis and later testing. Survey data and test data are evaluated separately.
 
-## 1. Daten aus der Zielgruppenbefragung
+## 1. Survey data
 
-| Datentyp | Zweck | Erforderlich | Speicherdauer |
-|---|---|---:|---|
-| Bildungsbereich | Einordnung der Antworten nach Zielgruppe | Ja | Bis 12 Monate nach Abschluss der Auswertung |
-| Erfahrung mit Projektarbeiten | Einordnung der bisherigen Projekterfahrung | Ja | Bis 12 Monate nach Abschluss der Auswertung |
-| Bevorzugte Arbeitsform | Unterscheidung zwischen Einzel- und Gruppenprojekten | Ja | Bis 12 Monate nach Abschluss der Auswertung |
-| Verwendete Organisationswerkzeuge | Analyse der bisherigen Arbeitsweise | Ja | Bis 12 Monate nach Abschluss der Auswertung |
-| Schwierigkeiten bei Projektarbeiten | Ermittlung tatsächlicher Probleme | Ja | Bis 12 Monate nach Abschluss der Auswertung |
-| Gewünschte Funktionen | Priorisierung des Funktionsumfangs | Ja | Bis 12 Monate nach Abschluss der Auswertung |
-| Gewünschte Checklisten und Vorlagen | Planung geeigneter Inhalte | Nein | Bis 12 Monate nach Abschluss der Auswertung |
-| Erfahrung mit Notion | Beurteilung der notwendigen Einarbeitung | Ja | Bis 12 Monate nach Abschluss der Auswertung |
-| Mögliche Nutzungshindernisse | Ermittlung von Akzeptanzproblemen | Nein | Bis 12 Monate nach Abschluss der Auswertung |
-| Freitextantworten | Erfassung zusätzlicher Bedürfnisse und Hinweise | Nein | Bis 12 Monate nach Abschluss der Auswertung |
-| Bereitschaft für einen späteren Produkttest | Planung der Testphase | Nein | Bis 12 Monate nach Abschluss der Auswertung |
-| E-Mail-Adresse | Freiwillige Kontaktaufnahme für spätere Produkttests | Nein | Bis zum Widerruf oder bis zum Abschluss der Testphase |
+| Data | Purpose | Required | Retention |
+|---|---|:---:|---|
+| Education level | Classify answers by target group | Yes | Up to 12 months after evaluation |
+| Project experience | Classify prior experience | Yes | Up to 12 months after evaluation |
+| Preferred way of working | Distinguish individual and group projects | Yes | Up to 12 months after evaluation |
+| Tools used | Analyse current way of working | Yes | Up to 12 months after evaluation |
+| Difficulties in projects | Identify real problems | Yes | Up to 12 months after evaluation |
+| Desired features | Prioritise scope | Yes | Up to 12 months after evaluation |
+| Desired checklists and templates | Plan suitable content | No | Up to 12 months after evaluation |
+| Experience with project tools | Assess onboarding needs | Yes | Up to 12 months after evaluation |
+| Possible barriers to use | Identify acceptance problems | No | Up to 12 months after evaluation |
+| Free-text answers | Capture additional needs | No | Up to 12 months after evaluation |
+| Willingness to test later | Plan the test phase | No | Up to 12 months after evaluation |
+| Email address | Voluntary contact for later testing | No | Until withdrawal or end of test phase |
 
-## 2. Daten aus den späteren Produkttests
+## 2. Test data
 
-| Datentyp | Zweck | Erforderlich | Speicherdauer |
-|---|---|---:|---|
-| Bildungsbereich | Zusammenstellung einer geeigneten Testgruppe | Ja | Bis 12 Monate nach Abschluss der Testphase |
-| Technische Vorkenntnisse | Einordnung der Bedienbarkeit | Ja | Bis 12 Monate nach Abschluss der Testphase |
-| Erfahrung mit Notion | Beurteilung der Einarbeitung | Ja | Bis 12 Monate nach Abschluss der Testphase |
-| Verwendetes Gerät | Prüfung der Desktop- und Mobilnutzung | Ja | Bis 12 Monate nach Abschluss der Testphase |
-| Getestete Version | Nachvollziehbarkeit der Testergebnisse | Ja | Dauerhaft ohne Personenbezug |
-| Benötigte Bearbeitungszeit | Messung der Bedienbarkeit | Ja | Bis 12 Monate nach Abschluss der Testphase |
-| Testergebnisse | Überprüfung der definierten Anforderungen | Ja | Bis 12 Monate nach Abschluss der Testphase |
-| Aufgetretene Schwierigkeiten | Identifikation von Bedienungsproblemen | Ja | Bis 12 Monate nach Abschluss der Testphase |
-| Bewertung der Bedienbarkeit | Verbesserung der Benutzeroberfläche | Ja | Bis 12 Monate nach Abschluss der Testphase |
-| Verbesserungsvorschläge | Weiterentwicklung des Systems | Nein | Bis 12 Monate nach Abschluss der Testphase |
+| Data | Purpose | Required | Retention |
+|---|---|:---:|---|
+| Education level | Compose a suitable test group | Yes | Up to 12 months after test phase |
+| Technical knowledge | Assess usability | Yes | Up to 12 months after test phase |
+| Device used | Check desktop and mobile use | Yes | Up to 12 months after test phase |
+| Tested version | Traceability of results | Yes | Permanently, without personal reference |
+| Time needed | Measure usability | Yes | Up to 12 months after test phase |
+| Test results | Verify requirements | Yes | Up to 12 months after test phase |
+| Difficulties | Identify usability problems | Yes | Up to 12 months after test phase |
+| Usability rating | Improve the UI | Yes | Up to 12 months after test phase |
+| Suggestions | Further development | No | Up to 12 months after test phase |
 
-## 3. Freiwillige Kontaktaufnahme
+During testing, testers create accounts in the app with **sample data only**. Test accounts are deleted after the test phase.
 
-Die Umfrage kann ohne Angabe einer E-Mail-Adresse ausgefüllt werden. Teilnehmende können am Ende freiwillig ihre E-Mail-Adresse hinterlassen, wenn sie an einem späteren Produkttest teilnehmen möchten.
+## 3. Voluntary contact
 
-Antworten ohne E-Mail-Adresse werden ohne direkte Identifikationsmerkmale ausgewertet. Freitextfelder dürfen keine Namen, vertraulichen Schulinformationen oder andere sensible Angaben enthalten.
+The survey can be completed without an email address. Participants can voluntarily leave their email address at the end if they want to take part in a later product test.
 
-Antworten mit einer E-Mail-Adresse gelten als personenbezogen und werden entsprechend geschützt. Die E-Mail-Adressen werden nicht veröffentlicht und ausschliesslich für die Kontaktaufnahme im Zusammenhang mit dem Produkttest verwendet.
+Answers without an email address are evaluated without direct identifiers. Free-text fields must not contain names, confidential school information or other sensitive data.
 
-## 4. Verwendetes Erhebungswerkzeug
+Answers with an email address count as personal data and are protected accordingly. Email addresses are never published and only used to contact people about product testing.
 
-| Angabe | Wert |
+## 4. Survey tool
+
+| | |
 |---|---|
-| Werkzeug | Microsoft Forms |
-| Formulareinstellung | Jeder kann antworten; Namen werden nicht automatisch erfasst |
-| Verantwortliche Person | Sara Chenna |
-| Speicherort der Rohdaten | Microsoft Forms beziehungsweise das zugehörige Microsoft-365-Konto; exportierte Dateien werden in einem geschützten OneDrive-Ordner gespeichert |
-| Zugriffsberechtigte Personen | Sara Chenna |
-| Geplante Löschung | Spätestens zwölf Monate nach Abschluss der Auswertung; freiwillig angegebene E-Mail-Adressen nach Abschluss der Testphase oder bei Widerruf |
-| Einwilligungsinformation vorhanden | Ja – Teilnahme- und Datenschutzhinweise befinden sich am Anfang der Umfrage; für die freiwillige Angabe der E-Mail-Adresse wird zusätzlich über deren Zweck informiert |
-| Veröffentlichung der Daten | Nur anonymisierte und zusammengefasste Ergebnisse; keine Rohdaten oder E-Mail-Adressen |
-| Erhebung von E-Mail-Adressen | Freiwillig und ausschliesslich zur Kontaktaufnahme für einen späteren Produkttest |
+| Tool | Microsoft Forms |
+| Settings | Anyone can respond; names are not recorded automatically |
+| Responsible | Sara Chenna |
+| Raw data location | Microsoft Forms / associated Microsoft 365 account; exports in a protected OneDrive folder |
+| Access | Sara Chenna only |
+| Deletion | At the latest 12 months after evaluation; email addresses after the test phase or on withdrawal |
+| Consent information | Yes – participation and privacy notes at the start of the survey; separate purpose note for the optional email address |
+| Publication | Only anonymised, aggregated results; no raw data or email addresses |
 
-## 5. Verarbeitung und Veröffentlichung
+## 5. Processing and publication
 
-Vor Beginn der Erhebung werden die Teilnahme- und Datenschutzinformationen geprüft. Die Teilnahme ist freiwillig. Die erhobenen Angaben werden ausschliesslich für die Anforderungsanalyse und die Weiterentwicklung des Projektmanagement-Templates verwendet.
+Participation is voluntary. Collected data is used only for the requirements analysis and further development of Guidance.
 
-Rohdaten, E-Mail-Adressen und andere personenbezogene Angaben werden nicht im öffentlichen GitHub-Repository veröffentlicht. Veröffentlicht werden ausschliesslich anonymisierte und zusammengefasste Ergebnisse.
+Raw data, email addresses and other personal data are never published in this repository. Only anonymised, aggregated results are published. Personal data is deleted or anonymised as soon as it is no longer needed for its stated purpose.
 
-Personenbezogene Daten werden gelöscht oder anonymisiert, sobald sie für den angegebenen Zweck nicht mehr benötigt werden.
+## 6. Minors
+
+If minors take part in tests:
+
+1. Information is written in clear, age-appropriate language.
+2. Participation is voluntary and can be stopped at any time without disadvantage.
+3. Only data needed for the test is collected.
+4. The minor is involved and agrees to participate.
+5. Where required, documented consent of a legal guardian is obtained.
+6. When recruiting via a school, its internal rules and approvals are followed.
+7. Results are only published in anonymised form.
+
+For the first test phase, adult testers are preferred. Before the app is used publicly, a privacy policy and terms of use under the Swiss Federal Act on Data Protection (FADP) are created and reviewed.

@@ -1,67 +1,57 @@
 # Roadmap
 
-**Stand:** 25. Oktober 2026
-**Status:** Proposed (Review durch Sara ausstehend)
-**Zeitbudget:** ca. 10 Stunden pro Woche für die Webanwendung, zusätzliche Stunden gelten als Puffer
-
-## Ziel bis 31. Dezember 2026
-
-Ein funktionierender, online erreichbarer Durchstich der Webanwendung (Codename «Guidance»), den Recruiter ab Januar 2027 ausprobieren können.
-
-| Funktion | Umfang im Durchstich |
+| | |
 |---|---|
-| Registrieren und Anmelden | über ASP.NET Core Identity |
-| Projekte | anlegen, bearbeiten, anzeigen; nur Mitglieder sehen ein Projekt |
-| Gruppenmitglieder | bestehendes Konto per E-Mail-Adresse zu einem Projekt hinzufügen (ohne E-Mail-Versand) |
-| Kanban-Board | Aufgaben mit Status Offen, In Arbeit, Erledigt und verantwortlicher Person |
-| Abgabe-Checkliste | anpassbare Checkliste pro Projekt |
+| Last updated | 25 October 2026 |
+| Status | Accepted |
+| Time budget | about 10 hours per week; additional hours count as buffer |
 
-Nicht im Durchstich: Soll-Ist-Diagramm, Schulvorlagen, Benachrichtigungen, E-Mail-Einladungen, Schullizenz.
+## Goal by 31 December 2026
 
-## Technik
+A working walking skeleton of **Guidance**, available online, that recruiters and testers can try from January 2027.
 
-ASP.NET Core, Blazor, ASP.NET Core Identity, Entity Framework Core (lokal SQLite, online PostgreSQL). Entwicklungsumgebung: Visual Studio. Hosting wird bis Woche 4 entschieden.
+| Feature | Scope in the walking skeleton |
+|---|---|
+| Accounts | Register, sign in, sign out via ASP.NET Core Identity |
+| Projects | Create, edit, view; only members can see a project |
+| Group members | Add an existing account to a project by email address (no email sending) |
+| Kanban board | Tasks with status *To do*, *In progress*, *Done* and a responsible person |
+| Submission checklist | Customisable checklist per project |
 
-## Wochenplan
+Not in the walking skeleton: planned-vs-actual timeline, school templates, notifications, email invitations, school licence.
 
-| Woche | Zeitraum | IPERKA | Ziele |
+## Weekly plan
+
+| Week | Dates | IPERKA | Goals |
 |---|---|---|---|
-| 1 | 26.10.–01.11. | Informieren | Umfrage breiter verteilen; ADR-002 Plattformwechsel; README: Vision und Durchstich trennen; Entwicklungsumgebung einrichten, erste Blazor-Seite läuft lokal |
-| 2 | 02.–08.11. | Informieren → Planen | Umfrage auswerten; User Stories mit Must/Should/Could in `02_requirements.md`; Datenmodell skizzieren (Benutzer, Projekt, Mitgliedschaft, Aufgabe, Checklistenpunkt) |
-| 3 | 09.–15.11. | Entscheiden → Realisieren | Projektgerüst im Repository; EF Core mit SQLite; Registrieren und Anmelden |
-| 4 | 16.–22.11. | Realisieren | Projekte anlegen und bearbeiten inklusive Berechtigungsprüfung; Hosting entscheiden |
-| 5 | 23.–29.11. | Realisieren | Gruppenmitglieder hinzufügen; erste Version online stellen |
-| 6 | 30.11.–06.12. | Realisieren | Kanban-Board |
-| 7 | 07.–13.12. | Realisieren | Abgabe-Checkliste; Testfälle vorbereiten |
-| 8 | 14.–20.12. | Kontrollieren | Tests mit 4 Testpersonen (nur Beispieldaten); Fehler priorisieren und beheben |
-| 9 | 21.–31.12. | Auswerten | Restliche Fehler; README für Bewerbungen, Screenshots, Learnings; Feiertagspuffer |
+| 1 | 26.10.–01.11. | Inform | Distribute the survey more widely; set up Visual Studio and run a first Blazor page locally |
+| 2 | 02.–08.11. | Inform → Plan | Evaluate the survey; finalise user stories with MoSCoW in [02_requirements.md](02_requirements.md); refine the [data model](04_system_design.md) |
+| 3 | 09.–15.11. | Decide → Implement | Project scaffold in the repository; EF Core with SQLite; registration and sign-in; build check on pull requests |
+| 4 | 16.–22.11. | Implement | Create and edit projects including permission checks; decide on hosting |
+| 5 | 23.–29.11. | Implement | Add group members; first version online |
+| 6 | 30.11.–06.12. | Implement | Kanban board |
+| 7 | 07.–13.12. | Implement | Submission checklist; prepare test cases |
+| 8 | 14.–20.12. | Verify | Tests with 4 testers (sample data only); prioritise and fix issues |
+| 9 | 21.–31.12. | Review | Remaining fixes; README, screenshots and learnings for applications; holiday buffer |
 
-## Meilensteine
+## Milestones
 
-| ID | Meilenstein | Ziel-Datum | Kriterium |
+| ID | Milestone | Target date | Criterion |
 |---|---|---|---|
-| `M1` | Anmeldung funktioniert | 15.11.2026 | Konto erstellen, anmelden, abmelden lokal möglich |
-| `M2` | Erste Version online | 29.11.2026 | Projekte und Mitglieder über öffentliche URL nutzbar |
-| `M3` | Durchstich vollständig | 13.12.2026 | Alle fünf Funktionen umgesetzt |
-| `M4` | Bewerbungsbereit | 31.12.2026 | Tests ausgewertet, README und Demo aktuell |
+| `M1` | Sign-in works | 15.11.2026 | Create account, sign in and sign out locally |
+| `M2` | First version online | 29.11.2026 | Projects and members usable via a public URL |
+| `M3` | Walking skeleton complete | 13.12.2026 | All five features implemented |
+| `M4` | Ready for applications | 31.12.2026 | Tests evaluated, README and demo up to date |
 
-## Nebenstränge (nicht Teil der 10 Stunden)
+## Rules
 
-| Strang | Budget | Ziel |
-|---|---|---|
-| Notion IPERKA-Planer | einmalig | Gebaut am 24.10.2026; verkaufsbereit, sobald der Test im Free-Workspace bestanden ist |
-| Instagram @futuretemplate | max. 2 h/Woche | Aufbau nach Content-Strategie, Inhalte gebündelt produzieren |
+- If a week is not enough, scope is cut first, not quality.
+- New ideas go to an idea list and are reviewed after `M3`.
+- No real student data before the privacy concept is complete.
+- Small, regular commits with clear messages.
+- Weekly check-in: progress, deviations, next week.
 
-## Regeln
+## Open points
 
-- Wenn eine Woche nicht reicht, wird zuerst der Umfang gekürzt, nicht die Qualität.
-- Neue Ideen kommen in eine Ideenliste und werden erst nach `M3` geprüft.
-- Keine echten Schülerdaten vor Abschluss des Datenschutzkonzepts.
-- Kleine, regelmässige Commits mit klaren Nachrichten.
-- Wöchentlicher Check-in mit der Koordinatorin: Stand, Abweichungen, nächste Woche.
-
-## Offene Punkte
-
-- Hosting-Anbieter und Kosten
-- Endgültiger App-Name (Prüfung swissreg/EUIPO)
-- Preis und Marketplace-Kategorie für den Notion IPERKA-Planer
+- Hosting provider and costs
+- Final product name (trademark check on swissreg and EUIPO)

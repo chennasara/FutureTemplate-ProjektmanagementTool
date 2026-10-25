@@ -1,87 +1,83 @@
-Noch offen, mit Schulen abklären
-# Analyse schulischer Projektvorgaben
+# Analysis of School Project Requirements
 
-## 1. Ziel der Analyse
+| | |
+|---|---|
+| IPERKA phase | Inform |
+| Status | In Progress – further school requirements to be collected |
 
-Diese Analyse untersucht, welche Bestandteile, Dokumente und Abgaben bei schulischen Projektarbeiten wiederkehrend verlangt werden. Die Ergebnisse dienen dazu, passende Checklisten und Vorlagen für das Projektmanagement-Template festzulegen.
+## 1. Goal
 
-Die Analyse konzentriert sich auf Anforderungen, die für Schülerinnen, Schüler, Lernende und Studierende relevant sind.
+This analysis identifies which components, documents and deliverables are repeatedly required in school projects. The results determine which checklists and templates Guidance should offer.
 
-## 2. Untersuchte Projektvorgaben
+## 2. Requirements analysed
 
-| Projekt oder Bildungsbereich | Institution | Grundlage | Status |
+| Project or education level | Institution | Basis | Status |
 |---|---|---|---|
-| Interdisziplinäre Projektarbeit (IDPA) | BBZ Schaffhausen | Projektvorgaben und eigene Projekterfahrung | Analysiert |
-| Modulprojekt Informatik |  |  |  |
-| Abschlussarbeit oder Vertiefungsarbeit |  |  |  |
-| Hochschulprojekt |  |  |  |
+| Interdisciplinary project work (IDPA) | BBZ Schaffhausen | Project guidelines and own experience | Analysed |
+| ICT module project | | | Open |
+| Final or in-depth thesis | | | Open |
+| University project | | | Open |
 
-## 3. Wiederkehrende Bestandteile
+## 3. Recurring components
 
-| Bestandteil | IDPA | Modulprojekt | Weitere Vorgabe | Relevanz für das Template |
-|---|---:|---:|---:|---|
-| Projektziel oder Fragestellung | Ja |  |  | Checkliste und Projektübersicht |
-| Aufgabenverteilung | Ja |  |  | Personen- und Aufgabenverwaltung |
-| Termin- und Meilensteinplanung | Ja |  |  | Zeitplan und Kalender |
-| Projektdokumentation | Ja |  |  | Dokumentationsvorlage |
-| Quellenverzeichnis | Ja |  |  | Abgabecheckliste |
-| Persönliche Reflexion | Ja |  |  | Reflexionsvorlage |
-| Lernjournal | Ja |  |  | Wiederkehrende Dokumentation |
-| Präsentation | Ja |  |  | Präsentationscheckliste |
-| Endprodukt | Ja |  |  | Meilenstein und Abgabe |
-| Freigabe oder Abnahme |  |  |  | Abschlussstatus |
+| Component | IDPA | Module project | Other | Relevance for Guidance |
+|---|:---:|:---:|:---:|---|
+| Project goal or research question | Yes | | | Checklist and project overview |
+| Task allocation | Yes | | | Members and task assignment |
+| Schedule and milestones | Yes | | | Deadlines and calendar |
+| Project documentation | Yes | | | Documentation template |
+| List of sources | Yes | | | Submission checklist |
+| Personal reflection | Yes | | | Reflection template |
+| Learning journal | Yes | | | Recurring documentation |
+| Presentation | Yes | | | Presentation checklist |
+| Final product | Yes | | | Milestone and submission |
+| Approval or sign-off | | | | Closure status |
 
-## 4. Typische Projektphasen
+## 4. Typical project phases
 
-Aus den untersuchten Vorgaben lassen sich folgende wiederkehrende Projektphasen ableiten:
+1. Define topic and starting situation
+2. Define goal or research question
+3. Allocate tasks and responsibilities
+4. Plan deadlines and milestones
+5. Carry out and document the project
+6. Check the results
+7. Submit documentation and product
+8. Present and reflect
 
-1. Thema und Ausgangslage festlegen
-2. Ziel oder Fragestellung definieren
-3. Aufgaben und Verantwortlichkeiten verteilen
-4. Termine und Meilensteine planen
-5. Projekt durchführen und dokumentieren
-6. Ergebnisse überprüfen
-7. Dokumentation und Produkt abgeben
-8. Projekt präsentieren und reflektieren
+## 5. Recurring deliverables
 
-## 5. Wiederkehrende Abgaben
+| Deliverable | Timing | Responsibility | In Guidance |
+|---|---|---|:---:|
+| Project proposal or concept | Start | Group | Planned |
+| Schedule and task plan | Planning | Group | Planned |
+| Interim status | During implementation | Group | Planned |
+| Project documentation | End | Group | Planned |
+| Final product | End | Group | Planned |
+| Presentation | After submission | Group | Planned |
+| Personal reflection | End | Individual | Planned |
+| Learning journal | Ongoing | Individual | Planned |
 
-| Abgabe | Zeitpunkt | Verantwortlichkeit | Im Template vorgesehen |
-|---|---|---|---:|
-| Projektantrag oder Konzept | Projektbeginn | Projektgruppe | Ja |
-| Zeit- und Aufgabenplanung | Planungsphase | Projektgruppe | Ja |
-| Zwischenstand | Während der Umsetzung | Projektgruppe | Ja |
-| Projektdokumentation | Projektabschluss | Projektgruppe | Ja |
-| Endprodukt | Projektabschluss | Projektgruppe | Ja |
-| Präsentation | Nach der Abgabe | Projektgruppe | Ja |
-| Persönliche Reflexion | Projektabschluss | Einzelperson | Ja |
-| Lernjournal | Laufend | Einzelperson | Ja |
+## 6. Derived requirements
 
-## 6. Abgeleitete Anforderungen
+- Projects can be structured into phases and milestones.
+- Tasks can be assigned to responsible people.
+- Submission deadlines are visible in one place.
+- Recurring checklists are available as templates.
+- Documents and deliverables can be linked clearly.
+- Progress is visible.
+- Personal and shared tasks can be distinguished.
+- A reflection is possible at the end of a project.
 
-Aus der Analyse ergeben sich folgende mögliche Anforderungen an das Template:
+These are compared with the survey results. Only confirmed or well-justified requirements are added to the binding scope.
 
-- Projekte müssen in Phasen und Meilensteine gegliedert werden können.
-- Aufgaben müssen verantwortlichen Personen zugeordnet werden können.
-- Abgabetermine müssen zentral sichtbar sein.
-- Wiederkehrende Checklisten müssen als Vorlage bereitgestellt werden.
-- Dokumente und Abgaben müssen übersichtlich verlinkt werden können.
-- Der Arbeitsfortschritt muss sichtbar dargestellt werden.
-- Persönliche und gemeinsame Aufgaben müssen unterscheidbar sein.
-- Am Projektende muss eine Reflexion möglich sein.
+## 7. Open points
 
-Diese Anforderungen werden anschliessend mit den Ergebnissen der Zielgruppenbefragung verglichen. Erst Anforderungen, die bestätigt oder nachvollziehbar begründet werden können, werden in den verbindlichen Projektumfang übernommen.
+- [ ] Collect further school project guidelines
+- [ ] Compare at least two different project types
+- [ ] Distinguish mandatory from optional components
+- [ ] Compare with survey results
+- [ ] Prioritise requirements for the first version
 
-## 7. Offene Punkte
+## 8. Conclusion
 
-- [ ] Weitere schulische Projektvorgaben beschaffen
-- [ ] Mindestens zwei unterschiedliche Projektarten vergleichen
-- [ ] Pflichtbestandteile von optionalen Bestandteilen unterscheiden
-- [ ] Ergebnisse mit der Zielgruppenbefragung vergleichen
-- [ ] Anforderungen für die erste Version priorisieren
-
-## 8. Fazit
-
-Die bisherige Analyse zeigt, dass Aufgabenverteilung, Terminplanung, Dokumentation, Präsentation und Reflexion wiederkehrende Bestandteile schulischer Projektarbeiten sind.
-
-Die endgültige Auswahl der im Template enthaltenen Checklisten und Vorlagen erfolgt nach der Analyse weiterer Vorgaben und der Auswertung der Zielgruppenbefragung.
+So far, task allocation, scheduling, documentation, presentation and reflection appear as recurring components of school projects. The final selection of checklists and templates follows after analysing further guidelines and evaluating the survey.

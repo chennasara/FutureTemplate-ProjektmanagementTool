@@ -1,41 +1,45 @@
-# Auswertung eigener Projekterfahrungen
+# Analysis of Own Project Experience
 
-## Ziel
+| | |
+|---|---|
+| IPERKA phase | Inform |
+| Status | In Progress |
 
-Die Auswertung untersucht, welche organisatorischen Schwierigkeiten bei bisherigen Schul-, Gruppen- und Modulprojekten aufgetreten sind. Daraus werden mögliche Bedürfnisse für das Projektmanagement-Template abgeleitet.
+## Goal
 
-## Untersuchte Projekte
+This analysis looks at organisational difficulties in my own past school, group and module projects and derives possible needs for Guidance.
 
-| Projekt | Projektart | Eigene Rolle | Relevanz |
+## Projects analysed
+
+| Project | Type | My role | Relevance |
 |---|---|---|---|
-| IDPA Pflanzenwachstum | Gruppen- und Abschlussarbeit | Gruppenmitglied | längerer Projektzeitraum, Messungen, Dokumentation und Präsentation |
-|  |  |  |  |
+| IDPA – plant growth | Interdisciplinary group and final project (vocational baccalaureate) | Group member | Long project period, measurements, documentation and presentation |
 
-## Beobachtete Probleme
+## Observed problems
 
-| Beobachtung | Auswirkung | Möglicher Bedarf |
+| Observation | Impact | Possible need |
 |---|---|---|
-| Der ursprüngliche Zeitplan konnte nicht vollständig eingehalten werden. | Einzelne Arbeiten mussten später als vorgesehen durchgeführt werden. | Soll-Ist-Vergleich und sichtbare Meilensteine |
-| Projektdaten und Dokumentation mussten regelmässig aktualisiert werden. | Der aktuelle Stand war nicht immer sofort ersichtlich. | zentrale Projektübersicht |
-| Aufgaben mussten innerhalb der Gruppe koordiniert werden. | Zuständigkeiten und Fortschritt mussten wiederholt abgesprochen werden. | Aufgabenverteilung mit verantwortlicher Person |
-| Vorgaben für Dokumentation und Präsentation mussten beachtet werden. | Wichtige Bestandteile konnten übersehen werden. | anpassbare Abgabe-Checkliste |
+| The original schedule could not be fully kept. | Some work had to be done later than planned. | Planned-vs-actual comparison and visible milestones |
+| Project data and documentation had to be updated regularly. | The current state was not always immediately clear. | Central project overview |
+| Tasks had to be coordinated within the group. | Responsibilities and progress had to be discussed repeatedly. | Task assignment with a responsible person |
+| Requirements for documentation and presentation had to be followed. | Important parts could be overlooked. | Customisable submission checklist |
 
-## Positive Erfahrungen
+## What worked well
 
-- regelmässige Messungen unterstützten einen nachvollziehbaren Arbeitsprozess
-- eine klare Forschungsfrage half bei der inhaltlichen Ausrichtung
-- dokumentierte Zwischenergebnisse erleichterten die spätere Auswertung
-- die Zusammenarbeit ermöglichte eine Verteilung der Aufgaben
+- Regular measurements supported a traceable working process.
+- A clear research question helped focus the content.
+- Documented interim results made the final evaluation easier.
+- Working as a group allowed tasks to be shared.
 
-## Abgeleitete Bedürfnisse
+## Derived needs
 
-| ID | Abgeleitetes Bedürfnis | Einordnung |
+| ID | Need | Classification |
 |---|---|---|
-| `EXP-001` | Aufgaben und Zuständigkeiten sollen zentral festgehalten werden. | Annahme aus eigener Erfahrung |
-| `EXP-002` | Der geplante und tatsächliche Projektverlauf soll vergleichbar sein. | Annahme aus eigener Erfahrung |
-| `EXP-003` | Wichtige Abgaben sollen mit einer Checkliste kontrolliert werden. | Annahme aus eigener Erfahrung |
-| `EXP-004` | Dokumente und Zwischenergebnisse sollen zentral erreichbar sein. | Annahme aus eigener Erfahrung |
+| `EXP-001` | Tasks and responsibilities are recorded centrally. | Assumption from own experience |
+| `EXP-002` | Planned and actual progress can be compared. | Assumption from own experience |
+| `EXP-003` | Key deliverables are checked with a checklist. | Assumption from own experience |
+| `EXP-004` | Documents and interim results are accessible in one place. | Assumption from own experience |
 
-## Schlussfolgerung
+## Conclusion
 
-Die eigenen Projekterfahrungen zeigen wiederkehrende organisatorische Herausforderungen. Sie dienen als Ausgangspunkt für mögliche Anforderungen, ersetzen jedoch nicht die Befragung der Zielgruppe. Erst nach der Auswertung der Umfrage wird entschieden, welche Bedürfnisse bestätigt und in die erste Version aufgenommen werden.
+My own experience shows recurring organisational challenges. It is a starting point for requirements but does not replace asking the target group. Only after evaluating the survey is it decided which needs are confirmed and included in the first version.
