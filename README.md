@@ -37,7 +37,7 @@ Planned-vs-actual timeline, templates for specific schools and project types, no
 | Backend | ASP.NET Core |
 | Authentication | ASP.NET Core Identity |
 | Data access | Entity Framework Core |
-| Database | SQLite (local), PostgreSQL (hosted) |
+| Database | PostgreSQL (local and hosted) |
 | IDE | Visual Studio |
 | Hosting | to be decided (see [roadmap](docs/08_roadmap.md)) |
 
@@ -62,6 +62,7 @@ More on the method: [docs/03_methodology.md](docs/03_methodology.md)
 |---|---|---|
 | [ADR-001](decisions/ADR-001-notion-as-first-prototype.md) | Build the first prototype as a Notion template | Superseded |
 | [ADR-002](decisions/ADR-002-switch-to-aspnet-core-blazor.md) | Build a dedicated web app with ASP.NET Core and Blazor | Accepted |
+| [ADR-003](decisions/ADR-003-postgresql-everywhere.md) | Use PostgreSQL locally and in production | Accepted |
 
 The original Notion concept is kept in the [archive](archive/notion-concept/) to show how the project evolved.
 

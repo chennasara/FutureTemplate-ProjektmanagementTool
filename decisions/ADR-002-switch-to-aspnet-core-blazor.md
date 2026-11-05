@@ -52,3 +52,6 @@ Working title: **Guidance by FutureTemplates**.
 - Responsibility for hosting, security and personal data. Mitigation: Identity for authentication, no real student data before a privacy concept exists, membership checks on every data access
 - Hosting costs for .NET are higher than for static sites. Decision on a provider by week 4
 
+## Update
+
+The database choice in this ADR was refined on 2026-11-05: PostgreSQL is now used locally as well. See [ADR-003](ADR-003-postgresql-everywhere.md).
