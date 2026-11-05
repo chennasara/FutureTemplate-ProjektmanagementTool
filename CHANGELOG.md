@@ -5,6 +5,24 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### 2026-11-05
+#### Added
+- [ADR-003](decisions/ADR-003-postgresql-everywhere.md): PostgreSQL locally and in production
+- Password hashing and credential handling documented in the [system design](docs/04_system_design.md)
+
+#### Changed
+- Database switched from SQL Server LocalDB to PostgreSQL; database password stored in User Secrets
+- Milestone **M1** (sign-in works) achieved, ten days ahead of plan
+
+### 2026-10-28
+#### Fixed
+- Vulnerable transitive package `System.Security.Cryptography.Pkcs` updated to 10.0.14
+
+### 2026-10-27
+#### Added
+- Blazor Web App scaffold (.NET 10, ASP.NET Core Identity) in `src/Guidance`
+- Standard .NET `.gitignore`
+
 ### 2026-10-25
 #### Added
 - [ADR-002](decisions/ADR-002-switch-to-aspnet-core-blazor.md): switch from a Notion template to a web app with ASP.NET Core and Blazor

@@ -8,6 +8,7 @@ Important decisions are documented as short Architecture Decision Records (ADRs)
 |---|---|---|---|
 | [ADR-001](ADR-001-notion-as-first-prototype.md) | Notion as platform for the first prototype | 2026-09-26 | Superseded by ADR-002 |
 | [ADR-002](ADR-002-switch-to-aspnet-core-blazor.md) | Dedicated web app with ASP.NET Core and Blazor | 2026-10-24 | Accepted |
+| [ADR-003](ADR-003-postgresql-everywhere.md) | PostgreSQL locally and in production | 2026-11-05 | Accepted |
 
 ## Status values
 

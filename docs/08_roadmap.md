@@ -26,7 +26,7 @@ Not in the walking skeleton: planned-vs-actual timeline, school templates, notif
 |---|---|---|---|
 | 1 | 26.10.–01.11. | Inform | Distribute the survey more widely; set up Visual Studio and run a first Blazor page locally |
 | 2 | 02.–08.11. | Inform → Plan | Evaluate the survey; finalise user stories with MoSCoW in [02_requirements.md](02_requirements.md); refine the [data model](04_system_design.md) |
-| 3 | 09.–15.11. | Decide → Implement | Project scaffold in the repository; EF Core with SQLite; registration and sign-in; build check on pull requests |
+| 3 | 09.–15.11. | Decide → Implement | Build check on pull requests *(scaffold, PostgreSQL and sign-in already done early, see M1)* |
 | 4 | 16.–22.11. | Implement | Create and edit projects including permission checks; decide on hosting |
 | 5 | 23.–29.11. | Implement | Add group members; first version online |
 | 6 | 30.11.–06.12. | Implement | Kanban board |
@@ -38,7 +38,7 @@ Not in the walking skeleton: planned-vs-actual timeline, school templates, notif
 
 | ID | Milestone | Target date | Criterion |
 |---|---|---|---|
-| `M1` | Sign-in works | 15.11.2026 | Create account, sign in and sign out locally |
+| `M1` | Sign-in works | 15.11.2026 | Create account, sign in and sign out locally. **Achieved 05.11.2026** |
 | `M2` | First version online | 29.11.2026 | Projects and members usable via a public URL |
 | `M3` | Walking skeleton complete | 13.12.2026 | All five features implemented |
 | `M4` | Ready for applications | 31.12.2026 | Tests evaluated, README and demo up to date |

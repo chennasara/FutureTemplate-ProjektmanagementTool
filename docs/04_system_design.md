@@ -19,7 +19,7 @@ Services (business logic)       ← rules: who may see a project, how a task is 
    │
 Entity Framework Core           ← translates C# objects into database queries
    │
-Database (SQLite / PostgreSQL)  ← where data is stored permanently
+Database (PostgreSQL)           ← where data is stored permanently
 
 ASP.NET Core Identity           ← accounts, passwords, sign-in
 ```
