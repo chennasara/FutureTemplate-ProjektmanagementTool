@@ -47,6 +47,8 @@ User ──< ProjectMember >── Project ──< TaskItem
 ## Security principles
 
 - Sign-in and password storage only via ASP.NET Core Identity.
+- **Passwords are never stored in plain text.** Identity stores only a salted hash (`PasswordHash` in the `AspNetUsers` table). A hash is a one-way fingerprint: the password cannot be calculated back from it, not even by the developer. At sign-in, the entered password is hashed again and compared with the stored hash.
+- Database credentials are never committed. Locally they live in .NET User Secrets; `appsettings.json` only contains the connection string without a password.
 - Every service method that reads or changes project data first checks project membership.
 - No personal data beyond email address and display name is stored in the walking skeleton.
 
