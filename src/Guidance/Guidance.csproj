@@ -13,11 +13,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.14" PrivateAssets="all" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.14" />
- feature/postgresql
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
 
     <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.14" />
- main
   </ItemGroup>
 
 </Project>
