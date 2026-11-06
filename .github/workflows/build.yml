@@ -1,0 +1,33 @@
+name: Build
+
+# When: on every pull request to main and every merge into main
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+# Least privilege: the build only needs to read the code
+permissions:
+  contents: read
+
+jobs:
+  build:
+    # Where: on a fresh Linux machine provided by GitHub
+    runs-on: ubuntu-latest
+
+    # What: the steps in order
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v7
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore packages
+        run: dotnet restore src/Guidance/Guidance.csproj
+
+      - name: Build
+        run: dotnet build src/Guidance/Guidance.csproj --no-restore --configuration Release
